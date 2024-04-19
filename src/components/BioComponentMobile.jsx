@@ -1,6 +1,6 @@
 import React from "react";
 import backgroundImage from "../assets/img/slider2.png"; // Ruta de tu imagen de fondo
-import logoNuevo from "../assets/img/logoblanco.png";
+import logoNuevo from "../assets/img/logo.png";
 import { Link } from "react-router-dom";
 import "animate.css";
 

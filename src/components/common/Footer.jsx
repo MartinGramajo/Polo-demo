@@ -1,5 +1,5 @@
 import { Image, Nav } from "react-bootstrap";
-import logoNuevo from "../../assets/img/logoblanco.png";
+import logoNuevo from "../../assets/img/logo.png";
 import { NavLink } from "react-router-dom";
 import linken from "../../assets/img/linken.png";
 import insta from "../../assets/img/insta.png";
