@@ -26,8 +26,8 @@ const CarouselComponent2 = () => {
     <div style={{ width: "90%", margin: "auto" }}>
       <Slider {...settings}>
         <div
-          className="d-flex justify-content-center align-items-center"
-          style={{ height: "300px" }}
+          className="d-flex justify-content-center align-items-center py-5"
+          style={{ height: "400px" }}
         >
           <div style={{ flex: 1, textAlign: "center" }}>
             {" "}
@@ -66,8 +66,8 @@ const CarouselComponent2 = () => {
         </div>
         {/* Repite el div para más slides según sea necesario */}
         <div
-          className="d-flex justify-content-center align-items-center"
-          style={{ height: "300px" }}
+          className="d-flex justify-content-center align-items-center py-5"
+          style={{ height: "400px" }}
         >
           <div style={{ flex: 1, textAlign: "center" }}>
             <h5
@@ -95,8 +95,8 @@ const CarouselComponent2 = () => {
           </div>
         </div>
         <div
-          className="d-flex justify-content-center align-items-center"
-          style={{ height: "300px" }}
+          className="d-flex justify-content-center align-items-center py-5"
+          style={{ height: "400px" }}
         >
           <div style={{ flex: 1, textAlign: "center" }}>
             <h5
