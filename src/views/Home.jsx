@@ -1,12 +1,14 @@
 import BioComponent from "../components/BioComponent";
 import BioComponentMobile from "../components/BioComponentMobile";
 import CarouselComponent from "../components/CarouselComponent";
+import CarouselComponent2 from "../components/CarouselComponente2";
 import ImageTextComponent from "../components/ImageTextComponent";
 import ImageTextComponent2 from "../components/ImageTextComponent2";
 import ImageTextComponent3 from "../components/ImageTextComponent3";
 import ImageTextMobileComponent from "../components/ImageTextMobileComponent";
 import ImageTextMobileComponent3 from "../components/ImageTextMobileComponent3";
 import ImageTextMobileComponent2 from "../components/ImageTextMobileComponente2";
+import MobileCarouselComponent2 from "../components/MobileCarouseComponent2";
 import MobileCarouselComponent from "../components/MobileCarouselComponent";
 import "animate.css";
 
@@ -16,8 +18,18 @@ const Home = () => {
       <div className="d-none d-lg-block" style={{ backgroundColor: "#191919" }}>
         <CarouselComponent />
       </div>
+      <div
+        className="d-none d-lg-block "
+        style={{ backgroundColor: "#191919" }}
+      >
+        <CarouselComponent2 />
+      </div>
       <div className="d-lg-none d-block" style={{ backgroundColor: "#191919" }}>
         <MobileCarouselComponent />
+      </div>
+
+      <div className="d-lg-none d-block" style={{ backgroundColor: "#191919" }}>
+        <MobileCarouselComponent2 />
       </div>
 
       <div className="d-none d-lg-block ">
