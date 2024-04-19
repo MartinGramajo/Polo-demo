@@ -61,7 +61,7 @@ const NavReact = () => {
               >
                 CONTACTO
               </Nav.Link>
-              <section className="ms-auto d-flex">
+              {/* <section className="ms-auto d-flex">
                 <div className="mx-2">
                   <a
                     href="https://www.instagram.com/polo_salud?igsh=eGMxaGNyOW05c2Fr"
@@ -92,7 +92,7 @@ const NavReact = () => {
                     />
                   </a>
                 </div>
-              </section>
+              </section> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
