@@ -179,24 +179,24 @@ body {
   }
 }
 .tamaño-logo {
-  width: 140px;
+  width: 80px;
 }
 
 @media (max-width: 800px) {
   .tamaño-logo {
-    width: 120px;
+    width: 80px;
   }
 }
 
 @media (max-width: 500px) {
   .tamaño-logo {
-    width: 100px;
+    width: 70px;
   }
 }
 
 @media (max-width: 320px) {
   .tamaño-logo {
-    width: 80px;
+    width: 60px;
   }
 }
 
@@ -565,11 +565,11 @@ body {
 }
 
 .color-gris {
-  color: #4a4a4a !important;
+  color: #646669 !important;
 }
 
 .bg-color-gris {
-  background-color: #4a4a4a !important;
+  background-color: #646669 !important;
 }
 
 /* BannerServicios.module.css */
@@ -626,4 +626,23 @@ body {
   .textBlock {
     width: 45%; /* Ajusta el ancho en pantallas más grandes */
   }
+}
+
+.slide-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.text-part {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.image-part img {
+  width: 50%;
+  height: auto;
+  display: block;
 }

@@ -10,7 +10,7 @@ const BioComponent = () => {
       className="animate__animated  animate__backInUp"
       style={{
         position: "relative",
-        height: "800px",
+        height: "700px",
         width: "100%",
         overflow: "hidden",
       }}
@@ -37,8 +37,9 @@ const BioComponent = () => {
           right: "0",
           width: "30%", // Ancho del contenido negro
           height: "100%",
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), linear-gradient(black, black)`, // Degradado negro sobre el color negro
-          opacity: "0.9", // Opacidad del contenido negro
+          backgroundColor: "#595C5F",
+          // backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), linear-gradient(black, black)`, // Degradado negro sobre el color negro
+          // opacity: "0.9", // Opacidad del contenido negro
         }}
       >
         {/* Marca abajo */}
@@ -63,7 +64,7 @@ const BioComponent = () => {
       <div
         style={{
           position: "absolute",
-          top: "78%",
+          top: "50%",
           left: "10%",
           transform: "translateY(-50%)",
           color: "white",
@@ -71,7 +72,7 @@ const BioComponent = () => {
           maxWidth: "40%", // Ancho máximo de la biografía
         }}
       >
-        <p className="lato-regular " style={{ fontSize: "16px" }}>
+        <p className="lato-regular " style={{ fontSize: "18px" }}>
           De criarse entre caballos en la provincia de Buenos Aires, a elegir
           una vida más citadina estudiando abogacía en la UBA y trabajar en el
           poder judicial al mismo tiempo que comenzaba una carrera de bailarina

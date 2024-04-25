@@ -17,7 +17,7 @@ function App() {
     <div className="d-flex flex-column min-vh-100 ">
       <HashRouter>
         <NavReact />
-        <Wsp />
+
         <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<Home />} />

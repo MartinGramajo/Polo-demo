@@ -3,6 +3,7 @@ import logoNuevo from "../../assets/img/logo.png";
 import { NavLink } from "react-router-dom";
 import linken from "../../assets/img/linken.png";
 import insta from "../../assets/img/insta.png";
+import wsp from "../../assets/wasa.svg";
 
 export default function Footer() {
   return (
@@ -42,7 +43,7 @@ export default function Footer() {
                       />
                     </a>
                   </div>
-                  <div className="mx-2">
+                  <div className="ms-1">
                     <a
                       href="https://www.linkedin.com/company/polo-salud/"
                       target="_blank"
@@ -53,6 +54,21 @@ export default function Footer() {
                         className="iconos-nav"
                         src={linken}
                         alt="linken"
+                        fluid
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      className=""
+                      href="https://wa.link/60nlhz"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Image
+                        style={{ width: "67px" }}
+                        src={wsp}
+                        alt="wsp"
                         fluid
                       />
                     </a>

@@ -1,8 +1,6 @@
 import { Container, Image, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import logoNuevo from "../../assets/img/logo.png";
-import linken from "../../assets/img/linken.png";
-import insta from "../../assets/img/insta.png";
 
 const NavReact = () => {
   function cerrar() {
@@ -11,93 +9,68 @@ const NavReact = () => {
   }
 
   return (
-    <>
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        variant="dark"
-        sticky="top"
-        className=" bg-dark"
-      >
-        <Container>
-          <Navbar.Brand href="/">
-            <div className="my-4">
-              <img className="tamaño-logo" src={logoNuevo} alt="logo" />
-            </div>
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      variant="dark"
+      sticky="top"
+      className="bg-dark"
+    >
+      <Container>
+        <div className="d-block d-lg-none mx-2">
+          <Navbar.Brand href="/" className=" mx-2">
+            <Image src={logoNuevo} alt="logo 1" className="tamaño-logo" fluid />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav ">
-            <Nav className="ms-auto mt-2 mt-sm-0">
-              <Nav.Link
-                to="/"
-                as={NavLink}
-                onClick={cerrar}
-                className="tamaño-medium ms-auto color-blanco mx-xl-2 my-auto nav-links"
-              >
-                INICIO
-              </Nav.Link>
-              <Nav.Link
-                to="/quien/soy"
-                as={NavLink}
-                onClick={cerrar}
-                className="tamaño-medium ms-auto color-blanco mx-xl-2 my-auto nav-links"
-              >
-                QUIENES SOMOS{" "}
-              </Nav.Link>
-              <Nav.Link
-                to="/servicios"
-                as={NavLink}
-                onClick={cerrar}
-                className="tamaño-medium ms-auto color-blanco mx-xl-2 my-auto nav-links"
-              >
-                SERVICIOS
-              </Nav.Link>
-
-              <Nav.Link
-                to="/contacto"
-                as={NavLink}
-                onClick={cerrar}
-                className="tamaño-medium ms-auto color-blanco mx-xl-2 my-auto nav-links"
-              >
-                CONTACTO
-              </Nav.Link>
-              {/* <section className="ms-auto d-flex">
-                <div className="mx-2">
-                  <a
-                    href="https://www.instagram.com/polo_salud?igsh=eGMxaGNyOW05c2Fr"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {" "}
-                    <Image
-                      className="iconos-nav"
-                      src={insta}
-                      alt="instagram"
-                      fluid
-                    />
-                  </a>
-                </div>
-                <div className="mx-2">
-                  <a
-                    href="https://www.linkedin.com/company/polo-salud/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {" "}
-                    <Image
-                      className="iconos-nav"
-                      src={linken}
-                      alt="linken"
-                      fluid
-                    />
-                  </a>
-                </div>
-              </section> */}
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </>
+        </div>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto ms-auto d-flex justify-content-center align-items-center">
+            <Nav.Link
+              as={NavLink}
+              to="/"
+              onClick={cerrar}
+              className="tamaño-medium color-blanco mx-2 my-auto"
+            >
+              INICIO
+            </Nav.Link>
+            <Nav.Link
+              as={NavLink}
+              to="/quien/soy"
+              onClick={cerrar}
+              className="tamaño-medium color-blanco mx-2 my-auto"
+            >
+              QUIENES SOMOS
+            </Nav.Link>
+            <div className="d-lg-block d-none mx-2">
+              <Navbar.Brand href="/" className="mx-2">
+                <Image
+                  src={logoNuevo}
+                  alt="logo 2"
+                  className="tamaño-logo"
+                  fluid
+                />
+              </Navbar.Brand>
+            </div>
+            <Nav.Link
+              as={NavLink}
+              to="/servicios"
+              onClick={cerrar}
+              className="tamaño-medium color-blanco mx-2 my-auto"
+            >
+              SERVICIOS
+            </Nav.Link>
+            <Nav.Link
+              as={NavLink}
+              to="/contacto"
+              onClick={cerrar}
+              className="tamaño-medium color-blanco mx-2 my-auto"
+            >
+              CONTACTO
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
