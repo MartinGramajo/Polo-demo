@@ -16,20 +16,26 @@ const ImageTextComponent = () => {
 
         {/* Texto a la derecha */}
         <div className="container" style={{ width: "50%" }}>
-          <h3>SERVICIOS DE VANGUARDIA</h3>
+          <h3> Plan Polo Salud</h3>
           <p>
-            Explora nuestra oferta exclusiva de servicios, donde la ciencia y la
-            tradición se unen para asegurar el máximo bienestar y rendimiento de
-            los caballos de polo. Nuestra empresa se enorgullece de liderar con
-            un enfoque innovador en el cuidado equino, empleando técnicas
-            manuales avanzadas y un profundo conocimiento científico en
-            anatomía, biomecánica y fisiología. Desde evaluaciones integrales
-            del bienestar físico hasta programas personalizados de mantenimiento
-            y recuperación, cada servicio está diseñado para responder a las
-            necesidades específicas de estos atletas equinos de élite. Descubre
-            cómo nuestros servicios especializados pueden transformar la salud y
-            el rendimiento de tu caballo, manteniéndolo en la cima de su juego.
-            Bienvenido a la excelencia en el cuidado del caballo de polo.
+            Evaluamos los caballos mediante cámara termo gráfica y métodos de
+            palpación precisos, los cuales nos permiten establecer un plan de
+            tratamiento osteopático de recuperación y mantenimiento. Esto se
+            integra perfectamente en el manejo diario de los caballos. Asimismo
+            ofrecemos servicios de osteopatía para los jugadores, aliviando
+            tensiones musculares y recuperando la movilidad funcional de las
+            estructuras músculo esqueléticas solicitadas durante la temporada.
+          </p>
+          <h3> Plan Mantenimiento Polo Salud</h3>
+          <p>
+            Establecemos un plan de seguimiento y mantenimiento de los equinos,
+            analizando la biomecánica funcional y estructuras músculo
+            esquelética de los caballos mediante palpación manual precisa y
+            análisis de las imágenes térmicas profesionales. Esto se integra
+            perfectamente en el manejo diario de los caballos. Asimismo,
+            brindamos soporte osteopático a los jugadores, aliviando tensiones
+            musculares y recuperando la movilidad funcional de las estructuras
+            músculo esqueléticas solicitadas durante la temporada.
           </p>
         </div>
       </div>

@@ -3,7 +3,7 @@ import BiografiaContenido from "../components/BiografiaContenido";
 import "animate.css";
 const Empresa = () => {
   return (
-    <div className="py-4">
+    <div style={{ backgroundColor: "#191919" }}>
       <BannerEmpresa />
 
       <div className=" text-center py-2 animate__animated  animate__backInUp text-white">

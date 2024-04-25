@@ -116,7 +116,7 @@ export default function ContactoForm() {
             </Row>
           </div>
         </div>
-        <span className="mt-1 text-black-50 tamaño-medio ">
+        <span className="mt-1  text-light tamaño-medio ">
           * Campos obligatorios
         </span>
         <div className="d-flex justify-content-center pt-5">
