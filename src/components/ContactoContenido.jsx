@@ -4,7 +4,7 @@ import ContactoForm from "./ContactoForm";
 const ContactoContenido = () => {
   return (
     <section className="container">
-      <div className="d-flex justify-content-center py-4">
+      <div className="d-flex justify-content-center py-4 text-white">
         <h1
           className="animate__animated  animate__fadeInLeft"
           style={{ fontSize: "24px", fontWeight: "bold" }}

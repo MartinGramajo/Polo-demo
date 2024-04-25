@@ -3,7 +3,7 @@ import "animate.css";
 
 const BiografiaContenido = () => {
   return (
-    <div className="container text-center">
+    <div className="container text-center text-white">
       <div>
         <h6
           className="lato-regular py-2 animate__animated  animate__fadeInLeft"

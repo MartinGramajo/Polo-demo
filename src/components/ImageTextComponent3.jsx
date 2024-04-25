@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "../assets/img/termo.png";
+import backgroundImage from "../assets/img/lesioncuello.jpg";
 
 const ImageTextComponent3 = () => {
   return (

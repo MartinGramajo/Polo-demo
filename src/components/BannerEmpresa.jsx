@@ -1,6 +1,6 @@
 import { Image } from "react-bootstrap";
-import bannerServicios from "../assets/img/slider8.png";
-import bannerServiciosCuadrado from "../assets/img/slider8.png";
+import bannerServicios from "../assets/img/slider2.png";
+import bannerServiciosCuadrado from "../assets/img/slider13.png";
 const BannerEmpresa = () => {
   return (
     <>

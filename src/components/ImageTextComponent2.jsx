@@ -1,6 +1,5 @@
 import React from "react";
-import backgroundImage from "../assets/img/slider6.png";
-import { Link } from "react-router-dom";
+import backgroundImage from "../assets/img/mapaMundi.png";
 
 const ImageTextComponent2 = () => {
   return (

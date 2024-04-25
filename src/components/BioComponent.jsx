@@ -72,6 +72,9 @@ const BioComponent = () => {
           maxWidth: "40%", // Ancho máximo de la biografía
         }}
       >
+        <h2 className="lato-regular text-white " style={{ fontSize: "32px" }}>
+          María Lujan Arias Osteópata <br />
+        </h2>
         <p className="lato-regular " style={{ fontSize: "18px" }}>
           De criarse entre caballos en la provincia de Buenos Aires, a elegir
           una vida más citadina estudiando abogacía en la UBA y trabajar en el
