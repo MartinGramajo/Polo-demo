@@ -106,16 +106,23 @@ const NavReact = () => {
                     <Offcanvas.Title>ENCONTRANOS EN EL MUNDO</Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body>
-                    Tenemos caballerizas en los principales spots de Polo
-                    alrededor del mundo. Contactanos para contratar nuestros
-                    servicios
+                    <h6>
+                      Tenemos caballerizas en los principales spots de Polo
+                      alrededor del mundo. Contactanos para contratar nuestros
+                      servicios
+                    </h6>
+
                     <div className="py-4">
-                      <h5>ESPAÑA </h5>
-                      <h5>ARGENTINA</h5>
-
-                      <h5>INGLATERRA</h5>
-
-                      <h5>FRANCIA</h5>
+                      <h5>● ESPAÑA </h5>
+                      <h5>● ARGENTINA</h5>
+                      <h5>● INGLATERRA</h5>
+                      <h5>● FRANCIA</h5>
+                    </div>
+                    <div>
+                      <h6>
+                        Mándanos tu consulta y nos pondremos en contacto para
+                        asesorarte según tus necesidades.
+                      </h6>
                     </div>
                   </Offcanvas.Body>
                 </Offcanvas>

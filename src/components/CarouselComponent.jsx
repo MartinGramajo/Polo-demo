@@ -1,7 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-scroll";
 import { Image } from "react-bootstrap";
 
@@ -10,19 +8,28 @@ import cliente2 from "../assets/img/mapaMundi.png";
 import cliente3 from "../assets/img/fracturacuello.jpg";
 
 const CarouselComponent = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 800,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4200,
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
+  const handleContactClick = () => {
+    window.location.href = "#/contacto"; // Redirecciona a la página de contacto
   };
 
   return (
     <div style={{ width: "90%", margin: "auto" }}>
-      <Slider {...settings}>
+      <Slider
+        dots={true}
+        infinite={true}
+        speed={800}
+        slidesToShow={1}
+        slidesToScroll={1}
+        autoplay={true}
+        autoplaySpeed={4200}
+        afterChange={handlePageChange}
+      >
         <div style={{ height: "300px" }}>
           <div
             style={{
@@ -40,11 +47,23 @@ const CarouselComponent = () => {
                 "Elevamos el desempeño del Polo <br /> a través de un
                 seguimiento, cuidado y dedicación exclusivos"
               </h5>
-              <Link to="servicios" spy={true} smooth={true} duration={500}>
-                <button className="ver-mas-btn text-white">
-                  CONOCÉ NUESTROS SERVICIOS
-                </button>
-              </Link>
+              <article className="d-flex justify-content-center">
+                <div>
+                  <Link to="servicios" spy={true} smooth={true} duration={500}>
+                    <button className="ver-mas-btn text-white">
+                      CONOCÉ NUESTROS SERVICIOS
+                    </button>
+                  </Link>
+                </div>
+                <div>
+                  <button
+                    className="ver-mas-btn text-white"
+                    onClick={handleContactClick}
+                  >
+                    CONTACTO
+                  </button>
+                </div>
+              </article>
             </div>
             <div style={{ flex: 1 }}>
               <Image
@@ -73,11 +92,24 @@ const CarouselComponent = () => {
                 "No sólo tratamos y cuidamos lo que más te importa, <br /> nos
                 convertimos en parte de tu equipo"
               </h5>
-              <Link to="trabajamos" spy={true} smooth={true} duration={500}>
-                <button className="ver-mas-btn text-white">
-                  CONOCÉ CÓMO TRABAJAMOS
-                </button>
-              </Link>
+
+              <article className="d-flex justify-content-center">
+                <div>
+                  <Link to="trabajamos" spy={true} smooth={true} duration={500}>
+                    <button className="ver-mas-btn text-white">
+                      CONOCÉ CÓMO TRABAJAMOS
+                    </button>
+                  </Link>
+                </div>
+                <div>
+                  <button
+                    className="ver-mas-btn text-white"
+                    onClick={handleContactClick}
+                  >
+                    CONTACTO
+                  </button>
+                </div>
+              </article>
             </div>
             <div style={{ flex: 1 }}>
               <Image
@@ -105,11 +137,29 @@ const CarouselComponent = () => {
               >
                 “Transformar lo invisible en visible”
               </h5>
-              <Link to="termografia" spy={true} smooth={true} duration={500}>
-                <button className="ver-mas-btn text-white">
-                  CONOCÉ EL USO DE LA CÁMARA TERMOGRÁFICA
-                </button>
-              </Link>
+
+              <article className="d-flex justify-content-center">
+                <div>
+                  <Link
+                    to="termografia"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    <button className="ver-mas-btn text-white">
+                      CONOCÉ EL USO DE LA CÁMARA TERMOGRÁFICA
+                    </button>
+                  </Link>
+                </div>
+                <div>
+                  <button
+                    className="ver-mas-btn text-white"
+                    onClick={handleContactClick}
+                  >
+                    CONTACTO
+                  </button>
+                </div>
+              </article>
             </div>
             <div style={{ flex: 1 }}>
               <Image
