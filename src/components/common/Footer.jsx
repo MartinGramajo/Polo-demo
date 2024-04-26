@@ -3,7 +3,7 @@ import logoNuevo from "../../assets/img/logo.png";
 import { NavLink } from "react-router-dom";
 import linken from "../../assets/img/linken.png";
 import insta from "../../assets/img/insta.png";
-import wsp from "../../assets/wasa.svg";
+import wsp from "../../assets/img/wasa.png";
 
 export default function Footer() {
   return (
@@ -60,17 +60,12 @@ export default function Footer() {
                   </div>
                   <div>
                     <a
-                      className=""
+                      className="mx-1"
                       href="https://wa.link/60nlhz"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <Image
-                        style={{ width: "67px" }}
-                        src={wsp}
-                        alt="wsp"
-                        fluid
-                      />
+                      <Image className="iconos-nav" src={wsp} alt="wsp" fluid />
                     </a>
                   </div>
                 </section>

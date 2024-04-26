@@ -23,11 +23,11 @@ const CarouselComponent = () => {
       <Slider
         dots={true}
         infinite={true}
-        speed={800}
+        speed={700}
         slidesToShow={1}
         slidesToScroll={1}
         autoplay={true}
-        autoplaySpeed={4200}
+        autoplaySpeed={4500}
         afterChange={handlePageChange}
       >
         <div style={{ height: "300px" }}>
