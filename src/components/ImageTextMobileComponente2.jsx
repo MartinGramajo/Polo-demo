@@ -1,7 +1,5 @@
 import React from "react";
-
-import backgroundImage from "../assets/img/slider6.png";
-import { Link } from "react-router-dom";
+import backgroundImage from "../assets/img/mapaMundi.png";
 
 const ImageTextMobileComponent2 = () => {
   return (
@@ -18,7 +16,7 @@ const ImageTextMobileComponent2 = () => {
       {/* Texto abajo */}
       <div className="container" style={{ width: "100%" }}>
         <h3>CÓMO TRABAJAMOS</h3>
-        <p>
+        <p style={{ fontSize: "14px" }}>
           Trabajamos en los principales spots de polo más reconocidos. Nos
           desplazamos a los principales spots de polo más reconocidos para
           ofrecer nuestros servicios in situ, integrándonos en la dinámica y

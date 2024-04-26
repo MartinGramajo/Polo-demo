@@ -50,16 +50,28 @@ const Home = () => {
         <ImageTextComponent3 />
       </div>
 
-      <div className="d-lg-none d-block ">
-        <div id="servicios" className="animate__animated   animate__fadeIn">
+      <div>
+        <div
+          className="d-lg-none d-block  text-white animate__animated   animate__fadeIn"
+          style={{ backgroundColor: "#191919" }}
+          id="servicios/mobile"
+        >
           <ImageTextMobileComponent />
         </div>
 
-        <div id="trabajamos" className="animate__animated   animate__fadeIn">
+        <div
+          id="trabajamos/mobile"
+          className="d-lg-none d-block  text-white animate__animated   animate__fadeIn"
+          style={{ backgroundColor: "#595C5F" }}
+        >
           <ImageTextMobileComponent2 />
         </div>
 
-        <div id="termografia" className="animate__animated   animate__fadeIn">
+        <div
+          id="termografia/mobile"
+          className="d-lg-none d-block  text-white animate__animated   animate__fadeIn"
+          style={{ backgroundColor: "#191919" }}
+        >
           <ImageTextMobileComponent3 />
         </div>
       </div>

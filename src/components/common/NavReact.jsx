@@ -22,6 +22,16 @@ const NavReact = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
+  const handleContactClick = () => {
+    window.location.href = "#/contacto"; // Redirecciona a la página de contacto
+  };
+
   return (
     <>
       <Navbar
@@ -123,6 +133,14 @@ const NavReact = () => {
                         Mándanos tu consulta y nos pondremos en contacto para
                         asesorarte según tus necesidades.
                       </h6>
+                    </div>
+                    <div className="text-center py-5">
+                      <button
+                        className="ver-mas-btn-sidebar text-white"
+                        onClick={handleContactClick}
+                      >
+                        CONTACTO
+                      </button>
                     </div>
                   </Offcanvas.Body>
                 </Offcanvas>

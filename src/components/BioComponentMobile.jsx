@@ -7,7 +7,7 @@ import "animate.css";
 const BioComponentMobile = () => {
   return (
     <div
-      className="animate__animated  animate__backInUp"
+      className="animate__animated  animate__fadeInUp"
       style={{
         position: "relative",
         height: "700px",

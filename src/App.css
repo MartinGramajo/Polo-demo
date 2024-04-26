@@ -548,6 +548,22 @@ body {
   color: black;
 }
 
+.ver-mas-btn-sidebar {
+  width: 250px;
+  background-color: #ff282d;
+  border: 2px solid #ff282d;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.ver-mas-btn-sidebar:hover {
+  background-color: #ff282d;
+  color: black;
+}
+
 .valor-item {
   transition: transform 0.2s ease-in-out;
 }

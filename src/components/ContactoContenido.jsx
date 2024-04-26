@@ -16,7 +16,7 @@ const ContactoContenido = () => {
         <hr style={{ width: "200px", color: "#ff282d" }} />
       </div>
       <div className="row my-4 text-center">
-        <div className=" col-12 animate__animated  animate__fadeInRight">
+        <div className=" col-12 animate__animated  animate__fadeInUp">
           <ContactoForm />
         </div>
       </div>

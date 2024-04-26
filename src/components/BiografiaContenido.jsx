@@ -6,7 +6,7 @@ const BiografiaContenido = () => {
     <div className="container text-center text-white">
       <div>
         <h6
-          className="lato-regular py-2 animate__animated  animate__fadeInLeft"
+          className="lato-regular py-2 animate__animated  animate__fadeInUp"
           style={{ fontSize: "18px" }}
         >
           Maria Lujan Arias nació el 19 de noviembre de 1982 en Buenos Aires en
@@ -17,7 +17,7 @@ const BiografiaContenido = () => {
       </div>
       <div>
         <h6
-          className="lato-regular py-2 animate__animated  animate__fadeInRight"
+          className="lato-regular py-2 animate__animated  animate__fadeInUp"
           style={{ fontSize: "18px" }}
         >
           Quienes la conocen puden dar cuenta que Maria Luján siempre persigió
@@ -28,7 +28,7 @@ const BiografiaContenido = () => {
       </div>
       <div>
         <h6
-          className="lato-regular py-2 animate__animated  animate__fadeInLeftanimate__animated  animate__fadeInLeft"
+          className="lato-regular py-2 animate__animated  animate__fadeInUp"
           style={{ fontSize: "18px" }}
         >
           Durante 10 años dirigió su propia clínica acompañando el desempeño,
@@ -39,7 +39,7 @@ const BiografiaContenido = () => {
       </div>
       <div>
         <h6
-          className="lato-regular py-2 animate__animated  animate__fadeInRight"
+          className="lato-regular py-2 aanimate__animated  animate__fadeInUp"
           style={{ fontSize: "18px" }}
         >
           Además de Osteópata Diplomada es auxiliar veterinario especializada en
@@ -51,13 +51,13 @@ const BiografiaContenido = () => {
       </div>
       <div>
         <h6
-          className="lato-regular py-2 pb-5 animate__animated  animate__fadeInLeft"
+          className="lato-regular py-2 pb-5 animate__animated  animate__fadeInUp"
           style={{ fontSize: "18px" }}
         >
           Actualmente y con sus muchos movimientos de países, reside junto a su
           familia en España y se traslada para brindar sus servicios personales
           para deportistas y las mejores organizaciones de polo, así como,
-          desarollar sus capacidades a nivel docente.
+          desarrollar sus capacidades a nivel docente.
         </h6>
       </div>
     </div>
