@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Image } from "react-bootstrap";
 import foto1 from "../../assets/img/slider17.png";
-import ModalFoto13Contenido from "./ModalFoto13Contenido";
+
 import ModalFoto17Contenido from "./ModalFoto17Contenido";
 
 const ModalFoto17 = () => {

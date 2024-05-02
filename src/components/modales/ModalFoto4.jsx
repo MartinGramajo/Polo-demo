@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Image } from "react-bootstrap";
-import ModalIsf2Contenido from "./ModalFoto4Contenido";
 import foto4 from "../../assets/img/4.jpg";
 import ModalFoto4Contenido from "./ModalFoto4Contenido";
 

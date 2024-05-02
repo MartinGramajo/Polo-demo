@@ -1,16 +1,10 @@
 import { Card } from "react-bootstrap";
 import BannerServicios from "../components/BannerServicios";
-import { useState } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const Servicios = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
-
   const handleContactClick = () => {
     window.location.href = "#/contacto"; // Redirecciona a la página de contacto
   };
