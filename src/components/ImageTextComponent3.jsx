@@ -15,8 +15,10 @@ const ImageTextComponent3 = () => {
 
       {/* Texto a la derecha */}
       <div className="container" style={{ width: "50%" }}>
-        <h3>CONOCÉ EL USO DE LA TERMOOGRAFÍA EN LOS EQUINOS</h3>
-        <p>
+        <h3 className="montserrat-bold" style={{ fontSize: "32px" }}>
+          CONOCÉ EL USO DE LA TERMOOGRAFÍA EN LOS EQUINOS
+        </h3>
+        <p className="montserrat-regular" style={{ fontSize: "18px" }}>
           La termografía es un método confiable para detectar y medir
           variaciones de temperatura o reduccion de la misma en regiones
           anatómicas del cuerpo. Estas variaciones se registran en imágenes

@@ -7,7 +7,7 @@ import wsp from "../../assets/img/wasa.png";
 
 export default function Footer() {
   return (
-    <div className=" text-white bg-dark text-white mt-auto ">
+    <div className=" text-white bg-dark text-white mt-auto montserrat-regular  ">
       <div className="px-4 pt-4 container">
         <div className="row">
           {/* Column1 */}
@@ -43,7 +43,7 @@ export default function Footer() {
                       />
                     </a>
                   </div>
-                  <div className="ms-1">
+                  <div className="mx-2">
                     <a
                       href="https://www.linkedin.com/company/polo-salud/"
                       target="_blank"
@@ -60,7 +60,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <a
-                      className="mx-1"
+                      className="mx-2"
                       href="https://wa.link/60nlhz"
                       target="_blank"
                       rel="noreferrer"

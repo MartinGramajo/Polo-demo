@@ -6,8 +6,10 @@ const ImageTextComponent2 = () => {
     <div className="d-flex align-items-center">
       {/* Texto a la derecha */}
       <div className="container" style={{ width: "50%" }}>
-        <h3>CÓMO TRABAJAMOS</h3>
-        <p>
+        <h3 className="montserrat-bold" style={{ fontSize: "32px" }}>
+          CÓMO TRABAJAMOS
+        </h3>
+        <p className="montserrat-regular" style={{ fontSize: "18px" }}>
           Trabajamos en los principales spots de polo más reconocidos. Nos
           desplazamos a los principales spots de polo más reconocidos para
           ofrecer nuestros servicios in situ, integrándonos en la dinámica y

@@ -3,21 +3,21 @@ import BiografiaContenido from "../components/BiografiaContenido";
 import "animate.css";
 const Empresa = () => {
   return (
-    <div style={{ backgroundColor: "#191919" }}>
+    <div>
       <BannerEmpresa />
 
-      <div className=" text-center py-2 animate__animated  animate__backInUp text-white">
-        <h2 className="lato-regular text-white" style={{ fontSize: "18px" }}>
+      {/* <div className="container py-2 animate__animated  animate__backInUp text-white">
+        <h2 className=" lato-regular text-dark" style={{ fontSize: "18px" }}>
           María Lujan Arias Osteópata <br />
         </h2>
-      </div>
+      </div> */}
       <h4
-        style={{ fontSize: "36px", fontWeight: "bold" }}
-        className=" text-white text-center lato-regular py-2 animate__animated  animate__backInUp"
+        style={{ fontSize: "24px" }}
+        className="pt-4 container montserrat-bold text-dark lato-regular py-2 animate__animated  animate__backInUp"
       >
         MI HISTORIA
       </h4>
-      <div className="">
+      <div className="py-4">
         <BiografiaContenido />
       </div>
     </div>

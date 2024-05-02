@@ -5,7 +5,7 @@ import bannerServiciosCuadrada from "../assets/img/slider10.png";
 
 const Contacto = () => {
   return (
-    <div style={{ backgroundColor: "#191919" }}>
+    <div>
       <>
         <div className="bannerContainer d-none d-md-block">
           <Image

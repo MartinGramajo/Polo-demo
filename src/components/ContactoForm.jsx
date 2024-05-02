@@ -61,8 +61,8 @@ export default function ContactoForm() {
                 controlId="validationCustom03"
               >
                 <Form.Label
-                  className="tamaño-medio text-white"
-                  style={{ fontWeight: "bold" }}
+                  className="montserrat-bold"
+                  style={{ fontWeight: "bold", fontSize: "18px" }}
                 >
                   Nombre*
                 </Form.Label>
@@ -73,8 +73,8 @@ export default function ContactoForm() {
               </Form.Group>
               <Form.Group as={Col} md="6" controlId="validationCustom04">
                 <Form.Label
-                  className="tamaño-medio text-white"
-                  style={{ fontWeight: "bold" }}
+                  className="montserrat-bold"
+                  style={{ fontWeight: "bold", fontSize: "18px" }}
                 >
                   Whatsapp*
                 </Form.Label>
@@ -92,8 +92,8 @@ export default function ContactoForm() {
             <Row>
               <Form.Group as={Col} md="6" controlId="validationCustom03">
                 <Form.Label
-                  className="tamaño-medio mt-2 text-white"
-                  style={{ fontWeight: "bold" }}
+                  className="montserrat-bold"
+                  style={{ fontWeight: "bold", fontSize: "18px" }}
                 >
                   Email*
                 </Form.Label>
@@ -104,8 +104,8 @@ export default function ContactoForm() {
               </Form.Group>
               <Form.Group as={Col} md="6" controlId="validationCustom03">
                 <Form.Label
-                  className="tamaño-medio mt-2 text-white"
-                  style={{ fontWeight: "bold" }}
+                  className="montserrat-bold"
+                  style={{ fontWeight: "bold", fontSize: "18px" }}
                 >
                   Consulta
                 </Form.Label>
@@ -126,7 +126,7 @@ export default function ContactoForm() {
             type="submit"
             value="Send"
           >
-            <span className=""> ENVIAR</span>
+            <span className="montserrat-bold"> ENVIAR</span>
           </Button>
         </div>
       </Form>

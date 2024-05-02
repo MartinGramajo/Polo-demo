@@ -71,6 +71,7 @@ const CarouselComponent = () => {
                 src={cliente}
                 alt="Imagen"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                fluid
               />
             </div>
           </div>
@@ -117,6 +118,7 @@ const CarouselComponent = () => {
                 src={cliente2}
                 alt="Imagen"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                fluid
               />
             </div>
           </div>
@@ -167,6 +169,7 @@ const CarouselComponent = () => {
                 src={cliente3}
                 alt="Imagen"
                 style={{ width: "100%", height: "100%" }}
+                fluid
               />
             </div>
           </div>

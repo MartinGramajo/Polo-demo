@@ -39,7 +39,7 @@ const NavReact = () => {
         expand="lg"
         variant="dark"
         sticky="top"
-        className="bg-dark"
+        className="bg-dark montserrat-regular "
       >
         <Container>
           <div className="d-block d-lg-none mx-2">

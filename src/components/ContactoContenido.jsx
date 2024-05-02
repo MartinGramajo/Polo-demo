@@ -4,10 +4,10 @@ import ContactoForm from "./ContactoForm";
 const ContactoContenido = () => {
   return (
     <section className="container">
-      <div className="d-flex justify-content-center py-4 text-white">
+      <div className="d-flex justify-content-center py-4 ">
         <h1
-          className="animate__animated  animate__fadeInLeft"
-          style={{ fontSize: "24px", fontWeight: "bold" }}
+          className="animate__animated  animate__fadeInLeft montserrat-bold"
+          style={{ fontSize: "26px", fontWeight: "bold" }}
         >
           CONECTA CON LOS EXPERTOS EN BIENESTAR EQUINO
         </h1>

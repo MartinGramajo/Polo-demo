@@ -11,6 +11,9 @@ import Galeria from "./views/Galeria";
 import Novedades from "./views/Novedades";
 import Servicios from "./views/Servicios";
 import Empresa from "./views/Empresa";
+import Home2 from "./views/Home2";
+import ComoTrabajamos from "./views/ComoTrabajamos";
+import CamaraTermografica from "./views/CamaraTermografica";
 
 function App() {
   return (
@@ -20,12 +23,14 @@ function App() {
         <Wsp />
         <ScrollToTop />
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Home2 />} />
           <Route exact path="/quien/soy" element={<Empresa />} />
           <Route exact path="/servicios" element={<Servicios />} />
           <Route exact path="/galeria" element={<Galeria />} />
           <Route exact path="/novedades" element={<Novedades />} />
           <Route exact path="/contacto" element={<Contacto />} />
+          <Route exact path="/como-trabajamos" element={<ComoTrabajamos />} />
+          <Route exact path="/camara" element={<CamaraTermografica />} />
         </Routes>
         <Footer />
       </HashRouter>

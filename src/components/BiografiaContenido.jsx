@@ -3,10 +3,10 @@ import "animate.css";
 
 const BiografiaContenido = () => {
   return (
-    <div className="container text-center text-white">
+    <div className="container text-dark montserrat-regular">
       <div>
         <h6
-          className="lato-regular py-2 animate__animated  animate__fadeInUp"
+          className="lato-regular py-2 animate__animated  animate__fadeInUp "
           style={{ fontSize: "18px" }}
         >
           Maria Lujan Arias nació el 19 de noviembre de 1982 en Buenos Aires en
