@@ -1,6 +1,4 @@
 import "animate.css";
-import ImageTextComponent2 from "../components/ImageTextComponent2";
-import ImageTextMobileComponent2 from "../components/ImageTextMobileComponente2";
 import ImageTextComponent3 from "../components/ImageTextComponent3";
 import ImageTextMobileComponent3 from "../components/ImageTextMobileComponent3";
 

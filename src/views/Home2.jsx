@@ -1,7 +1,6 @@
 import "animate.css";
 import BannerHome2Texto from "../components/BannerHome2Texto";
 import Cartas from "../components/Cartas";
-import ContactoForm from "../components/ContactoForm";
 import ContactoContenido from "../components/ContactoContenido";
 
 const Home2 = () => {
