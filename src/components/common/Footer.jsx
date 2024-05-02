@@ -4,14 +4,16 @@ import { NavLink } from "react-router-dom";
 import linken from "../../assets/img/linken.png";
 import insta from "../../assets/img/insta.png";
 import wsp from "../../assets/img/wasa.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
   return (
-    <div className=" text-white bg-dark text-white mt-auto montserrat-regular  ">
+    <div className=" text-white bg-dark text-white mt-auto  ">
       <div className="px-4 pt-4 container">
         <div className="row">
           {/* Column1 */}
-          <div className="col-12 col-lg-4 text-md-start d-flex justify-content-lg-start justify-content-center mx-auto mt-3 mt-md-0 ">
+          <div className="col-12 col-lg-4 text-md-start d-flex justify-content-lg-start justify-content-center mt-md-0 ">
             <ul className="list-unstyled">
               <li className="text-center pt-3">
                 <Image
@@ -24,7 +26,7 @@ export default function Footer() {
             </ul>
           </div>
           {/* Column2 */}
-          <div className="col-12 col-lg-4 text-md-start d-flex justify-content-center mx-auto  ">
+          <div className="col-12 col-lg-4 text-md-start d-flex justify-content-center   ">
             <ul className="list-unstyled my-5">
               <li>
                 <section className="justify-content-center d-flex ">
@@ -69,9 +71,9 @@ export default function Footer() {
                     </a>
                   </div>
                 </section>
-                <p className="tamaño-chico text-center  mt-2 mb-0">
-                  Cel: +34 650 032 819 <br />
-                  Mail: malujanarias@gmail.com
+                <p className="tamaño-chico text-center  mt-2 mb-0 montserrat-regular">
+                  <FontAwesomeIcon icon={faPhone} /> +34 650 032 819 <br />
+                  <FontAwesomeIcon icon={faEnvelope} /> malujanarias@gmail.com
                   <br />
                 </p>
               </li>
@@ -80,7 +82,7 @@ export default function Footer() {
           {/* Column3 */}
 
           <div className="col-12 col-lg-4  text-center   mb-1 mt-3 p-1 ">
-            <Nav className=" mt-2 mt-sm-0  flex-column mx-5 py-4 ">
+            <Nav className=" mt-sm-0  flex-column  ">
               <Nav.Link
                 to="/"
                 as={NavLink}

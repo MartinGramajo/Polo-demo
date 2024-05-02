@@ -5,7 +5,7 @@ const ContactoContenido = () => {
   return (
     <section className="container">
       <div className="py-4 d-none d-lg-block">
-        <div className="d-flex justify-content-start ">
+        <div className="d-flex justify-content-center ">
           <h1
             className="animate__animated  animate__fadeInLeft montserrat-bold"
             style={{ fontSize: "26px", fontWeight: "bold" }}
@@ -14,7 +14,7 @@ const ContactoContenido = () => {
           </h1>
         </div>
       </div>
-      <div className="d-flex justify-content-start py-4 d-lg-none d-block">
+      <div className="d-flex justify-content-center py-4 d-lg-none d-block">
         <h1
           className="animate__animated  animate__fadeInLeft montserrat-bold"
           style={{ fontSize: "18px", fontWeight: "bold" }}

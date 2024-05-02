@@ -30,7 +30,7 @@ const Servicios = () => {
         <div className="container animate__animated animate__fadeInUp">
           <div className="row">
             <div className="col-lg-6 mb-4">
-              <Card className="border border-dark rounded-3 cartas-planes">
+              <Card className="border border-danger rounded-3 cartas-planes">
                 <Card.Body>
                   <Card.Title className="montserrat-bold">
                     Plan Polo Salud
@@ -66,7 +66,7 @@ const Servicios = () => {
               </Card>
             </div>
             <div className="col-lg-6 mb-4">
-              <Card className="border border-dark rounded-3 cartas-planes">
+              <Card className="border border-danger rounded-3 cartas-planes">
                 <Card.Body>
                   <Card.Title className="montserrat-bold">
                     Plan Mantenimiento Polo Salud
