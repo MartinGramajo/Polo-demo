@@ -118,29 +118,11 @@ const NavReact = () => {
                     </Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body>
-                    <h6
-                      className="montserrat-regular"
-                      style={{ fontSize: "18px" }}
-                    >
-                      Tenemos caballerizas en los principales spots de Polo
-                      alrededor del mundo. Contactanos para contratar nuestros
-                      servicios
-                    </h6>
-
                     <div className="py-4">
                       <h5 className="montserrat-bold">● ESPAÑA </h5>
                       <h5 className="montserrat-bold">● ARGENTINA</h5>
                       <h5 className="montserrat-bold">● INGLATERRA</h5>
                       <h5 className="montserrat-bold">● FRANCIA</h5>
-                    </div>
-                    <div>
-                      <h6
-                        className="montserrat-regular"
-                        style={{ fontSize: "18px" }}
-                      >
-                        Mándanos tu consulta y nos pondremos en contacto para
-                        asesorarte según tus necesidades.
-                      </h6>
                     </div>
                     <div className="text-center py-5">
                       <button
