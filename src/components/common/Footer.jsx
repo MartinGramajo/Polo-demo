@@ -105,6 +105,13 @@ export default function Footer() {
                 SERVICIOS
               </Nav.Link>
               <Nav.Link
+                to="/como-trabajamos"
+                as={NavLink}
+                className=" text-white mx-xl-2 my-auto nav-links"
+              >
+                COMO TRABAJAMOS
+              </Nav.Link>
+              <Nav.Link
                 to="/contacto"
                 as={NavLink}
                 className="text-white mx-xl-2 my-auto nav-links"

@@ -8,18 +8,16 @@ const Home2 = () => {
     <div>
       <BannerHome2Texto />
       <article className="pt-4 container  d-none d-lg-block">
-        <h6 className=" montserrat-bold" style={{ fontSize: "24px" }}>
-          OPTIMIZAR EL RENDIMIENTO EQUINO: <br />
-          SU SOCIO EN LA EXCELENCIA DEL POLO
+        <h6 className=" custom-highlight" style={{ fontSize: "38px" }}>
+          Optimizando el rendimiento del polo
         </h6>
       </article>
       <article className="pt-4 container  d-lg-none d-block">
-        <h6 className=" montserrat-bold" style={{ fontSize: "18px" }}>
-          OPTIMIZAR EL RENDIMIENTO EQUINO: <br />
-          SU SOCIO EN LA EXCELENCIA DEL POLO
+        <h6 className="custom-highlight" style={{ fontSize: "26px" }}>
+          Optimizando el rendimiento del polo
         </h6>
       </article>
-      <article className="pt-4 container d-none d-lg-block">
+      {/* <article className="pt-4 container d-none d-lg-block">
         <h6 className=" montserrat-regular " style={{ fontSize: "20px" }}>
           Descubra cómo Polo Salud puede integrarse perfectamente con su equipo
           para mejorar el rendimiento, la salud y el bienestar de su caballo de
@@ -42,10 +40,24 @@ const Home2 = () => {
           termografía por infrarrojos de Polo Salud, diseñados para optimizar el
           rendimiento del caballo de polo y prevenir lesiones.
         </h6>
+      </article> */}
+      <article className="pt-4 container d-none d-lg-block">
+        <h6 className=" montserrat-regular " style={{ fontSize: "20px" }}>
+          Bienvenidos a la pagina web de Polo Salud donde descubrirás servicios
+          efectivos e innovadores para mejorar el rendimiento, la salud y
+          prevenir lesiones en tus caballos de polo
+        </h6>
       </article>
-      <article className="pb-5">
+      <article className="pt-4 container d-lg-none d-block">
+        <h6 className=" montserrat-regular " style={{ fontSize: "16px" }}>
+          Bienvenidos a la pagina web de Polo Salud donde descubrirás servicios
+          efectivos e innovadores para mejorar el rendimiento, la salud y
+          prevenir lesiones en tus caballos de polo
+        </h6>
+      </article>
+      {/* <article className="pb-5">
         <Cartas />
-      </article>
+      </article> */}
       <article className="pb-5">
         <ContactoContenido />
       </article>

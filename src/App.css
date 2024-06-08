@@ -728,7 +728,6 @@ body {
   width: 400px !important;
   margin-top: 1rem;
   margin-bottom: 1rem;
-
   padding-right: 0.25rem !important;
   padding-left: 0.25rem !important;
   margin-right: 0.5rem !important;
@@ -761,4 +760,17 @@ body {
   .cartas-planes {
     height: 100% !important;
   }
+}
+
+.cartas-planes2 {
+  height: 200px !important;
+}
+
+.custom-highlight {
+  font-family: "Brush Script MT", cursive; /* Estilo de letra similar */
+  font-size: 2em; /* Ajusta el tamaño según tus necesidades */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  font-style: italic; /* Cursiva para asemejar el estilo */
+  font-weight: 800 !important;
 }
