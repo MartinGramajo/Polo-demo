@@ -16,7 +16,7 @@ export default function ContactoForm() {
       e.stopPropagation();
       emailjs
         .sendForm(
-          "service_t1121d9",
+          "service_k4nhz6e",
           "template_ygrqcak",
           e.target,
           "wnYR1p8-ORmvwBjic"
@@ -57,7 +57,7 @@ export default function ContactoForm() {
               <Form.Group
                 className=""
                 as={Col}
-                md="6"
+                md="12"
                 controlId="validationCustom03"
               >
                 <Form.Label
@@ -71,7 +71,7 @@ export default function ContactoForm() {
                   Ingrese su nombre completo por favor.
                 </Form.Control.Feedback>
               </Form.Group>
-              <Form.Group as={Col} md="6" controlId="validationCustom04">
+              <Form.Group as={Col} md="12" controlId="validationCustom04">
                 <Form.Label
                   className="montserrat-bold"
                   style={{ fontWeight: "bold", fontSize: "18px" }}
@@ -90,7 +90,7 @@ export default function ContactoForm() {
               </Form.Group>
             </Row>
             <Row>
-              <Form.Group as={Col} md="6" controlId="validationCustom03">
+              <Form.Group as={Col} md="12" controlId="validationCustom03">
                 <Form.Label
                   className="montserrat-bold"
                   style={{ fontWeight: "bold", fontSize: "18px" }}
@@ -102,7 +102,7 @@ export default function ContactoForm() {
                   Ingrese su Email por favor.
                 </Form.Control.Feedback>
               </Form.Group>
-              <Form.Group as={Col} md="6" controlId="validationCustom03">
+              <Form.Group as={Col} md="12" controlId="validationCustom03">
                 <Form.Label
                   className="montserrat-bold"
                   style={{ fontWeight: "bold", fontSize: "18px" }}
@@ -119,9 +119,9 @@ export default function ContactoForm() {
         <span className="mt-1  text-light tamaño-medio ">
           * Campos obligatorios
         </span>
-        <div className="d-flex justify-content-center pt-5">
+        <div className="d-flex justify-content-center ">
           <Button
-            className="w-25 p-2 border-0 text-white color-btn-fondo"
+            className="w-25  border-0 text-white color-btn-fondo"
             size="sm"
             type="submit"
             value="Send"

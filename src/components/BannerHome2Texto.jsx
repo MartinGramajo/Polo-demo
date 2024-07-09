@@ -19,15 +19,11 @@ const BannerHome2Texto = () => {
           alt="inicio banner"
         />
       </div>
-      {/* <div className="textOverlay">
-        <h6
-          className="text-center montserrat-bold"
-          style={{ fontSize: "32px" }}
-        >
-          OPTIMIZE EQUINE PERFORMANCE: <br />
-          YOUR PARTNER IN POLO EXCELLENCE
-        </h6>
-      </div> */}
+      <div className="textOverlay">
+        <article className=" container margin-text-image banner-text">
+          <i>SERVING HEALTH TO POLO PONIES</i>
+        </article>
+      </div>
     </div>
   );
 };

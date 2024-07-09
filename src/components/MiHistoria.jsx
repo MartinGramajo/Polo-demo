@@ -26,7 +26,7 @@ function MiHistoria() {
           <div className="container text-dark montserrat-regular">
             <h4
               style={{ fontSize: "24px" }}
-              className="pt-4 container montserrat-bold text-dark lato-regular py-2 animate__animated  animate__backInUp"
+              className="pt-4  montserrat-bold text-dark lato-regular py-2 animate__animated  animate__backInUp"
             >
               MI HISTORIA
             </h4>
