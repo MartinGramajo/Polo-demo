@@ -10,33 +10,17 @@ const ImageTextComponent2 = () => {
           CÓMO TRABAJAMOS
         </h3>
         <p className="montserrat-regular" style={{ fontSize: "18px" }}>
-          Ofrecemos servicios in situ que se integran perfectamente con las
-          funciones diarias de cada organización.
+          Trabajamos en los principales spots de polo más reconocidos. ESPAÑA,
+          INGLATERRA, FRANCIA Y ARGENTINA
         </p>
         <p className="montserrat-regular" style={{ fontSize: "18px" }}>
-          Establecemos un plan de tratamiento y mantenimiento realista según las
-          necesidades específicas de cada organización.
+          Ofrecemos servicios y planes de tratamiento in situ que se integran
+          perfectamente con las funciones diarias de cada organización.
         </p>
         <p className="montserrat-regular" style={{ fontSize: "18px" }}>
           Trabajamos con organizaciones de polo que comparten nuestra misma
           misión: cuidar a sus caballos y optimizar el desempeño de cada uno en
-          armonía.
-        </p>
-        <p className="montserrat-regular" style={{ fontSize: "18px" }}>
-          Nuestro espíritu es innovador, colaborativo y eficaz.
-        </p>
-        <p className="montserrat-regular" style={{ fontSize: "18px" }}>
-          Nuestras técnicas son no invasivas y sin doping.
-        </p>
-        <p className="montserrat-regular" style={{ fontSize: "18px" }}>
-          Nuestro Alcance es internacional
-        </p>
-        <p
-          className="montserrat-regular"
-          style={{ fontSize: "18px", fontWeight: "bold" }}
-        >
-          Trabajamos en los principales spots de polo más reconocidos. <br />{" "}
-          ESPAÑA, UK, FRANCIA Y ARGENTINA
+          armonía
         </p>
       </div>
       {/* Imagen cuadrada a la izquierda */}

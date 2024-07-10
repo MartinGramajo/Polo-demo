@@ -766,6 +766,10 @@ body {
   }
 }
 
+.cartas-planes2-como-trabajamos {
+  height: auto !important;
+}
+
 .card-img {
   height: 400px; /* Altura deseada para las imágenes */
   object-fit: cover; /* Cubrir el contenedor manteniendo la relación de aspecto */
