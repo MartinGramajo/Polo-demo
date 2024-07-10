@@ -65,11 +65,19 @@ const NavReact = () => {
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
-                to="/quien/soy"
+                to="/servicios"
                 onClick={cerrar}
                 className="tamaño-medium color-blanco mx-2 my-auto"
               >
-                QUIENES SOMOS
+                SERVICIOS
+              </Nav.Link>
+              <Nav.Link
+                as={NavLink}
+                to="/como-trabajamos"
+                onClick={cerrar}
+                className="tamaño-medium color-blanco mx-2 my-auto"
+              >
+                CÓMO TRABAJAMOS
               </Nav.Link>
               <div className="d-lg-block d-none mx-2">
                 <Navbar.Brand href="/" className="mx-2">
@@ -83,11 +91,19 @@ const NavReact = () => {
               </div>
               <Nav.Link
                 as={NavLink}
-                to="/servicios"
+                to="/quien/soy"
                 onClick={cerrar}
                 className="tamaño-medium color-blanco mx-2 my-auto"
               >
-                SERVICIOS
+                QUIENES SOMOS
+              </Nav.Link>
+              <Nav.Link
+                as={NavLink}
+                to="/quien/soy"
+                onClick={cerrar}
+                className="tamaño-medium color-blanco mx-2 my-auto"
+              >
+                QUIENES
               </Nav.Link>
               <Nav.Link
                 as={NavLink}

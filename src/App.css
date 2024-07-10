@@ -757,7 +757,20 @@ body {
 }
 
 .cartas-planes2 {
-  height: 200px !important;
+  height: 650px !important;
+}
+
+@media screen and (max-width: 1100px) {
+  .cartas-planes2 {
+    height: auto !important;
+  }
+}
+
+.card-img {
+  height: 400px; /* Altura deseada para las imágenes */
+  object-fit: cover; /* Cubrir el contenedor manteniendo la relación de aspecto */
+  object-position: initial; /* Posición centrada de la imagen */
+  border-radius: 8px; /* Borde redondeado, ajusta según tus preferencias */
 }
 
 .custom-highlight {
