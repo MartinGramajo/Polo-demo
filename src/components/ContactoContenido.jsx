@@ -11,8 +11,8 @@ const ContactoContenido = () => {
             style={{ fontSize: "22px", fontWeight: "bold" }}
           >
             Programe una consulta gratuita hoy para analizar cómo Polo Salud
-            puede ayudar a su organización o rellene el siguiente formulario de
-            contacto
+            puede ayudar a su organización calendly o rellene el siguiente
+            formulario de contacto
           </h1>
         </div>
       </div>

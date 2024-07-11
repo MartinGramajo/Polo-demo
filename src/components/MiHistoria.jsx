@@ -5,9 +5,13 @@ import Collapse from "react-bootstrap/Collapse";
 function MiHistoria() {
   const [open, setOpen] = useState(false);
 
+  const handleHomeClick = () => {
+    window.location.href = "/";
+  };
+
   return (
     <>
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center pt-5">
         <Button
           onClick={() => setOpen(!open)}
           className={
@@ -43,10 +47,23 @@ function MiHistoria() {
             </div>
             <div>
               <h6
+                className="lato-regular py-2 animate__animated  animate__fadeInUp "
+                style={{ fontSize: "18px" }}
+              >
+                De estar en contacto con caballos en la provincia de Buenos
+                Aires, a elegir una vida más citadina estudiando abogacía en la
+                UBA y trabajar en el poder judicial al mismo tiempo que
+                comenzaba una carrera de bailarina de danza contemporánea que la
+                hizo mudarse a Europa a los 22 años, es que Maria Luján llegó a
+                la Osteopatía y decidió formarse en ello.
+              </h6>
+            </div>
+            <div>
+              <h6
                 className="lato-regular py-2 animate__animated  animate__fadeInUp"
                 style={{ fontSize: "18px" }}
               >
-                Quienes la conocen puden dar cuenta que Maria Luján siempre
+                Quienes la conocen puEden dar cuenta que Maria Luján siempre
                 persigió sus sueños, y con paso firme, terminó formándose en las
                 mejores instituciones educativas y transformarse en una
                 profesional en el ámbito de la Osteopatía humana y equina.
@@ -84,10 +101,20 @@ function MiHistoria() {
                 Actualmente y con sus muchos movimientos de países, reside junto
                 a su familia en España y se traslada para brindar sus servicios
                 profesionales para deportistas y las mejores organizaciones de
-                polo, así como, desarollar sus capacidades a nivel docente.
+                polo, así como, desarrollar sus capacidades a nivel docente.
               </h6>
             </div>
           </div>
+          <section className="d-flex justify-content-center flex-wrap">
+            <div className="text-center pb-4 mx-4">
+              <button
+                className="ver-mas-btn-sidebar text-white montserrat-regular"
+                onClick={handleHomeClick}
+              >
+                VOLVER AL HOME
+              </button>
+            </div>
+          </section>
         </div>
       </Collapse>
     </>

@@ -33,7 +33,7 @@ const ImagenTextQuienes = () => {
               <li>
                 Diplomada en Osteopatía por la European alliance y Animal
                 Osteopathy International reconocida por la European School of
-                Osteopathy.
+                Osteopathy de Inglaterra.
               </li>
               <li>Miembro del registro de Osteopatas de España ROE N°783.</li>
               <li>
@@ -41,8 +41,8 @@ const ImagenTextQuienes = () => {
                 rehabilitación equina.
               </li>
               <li>
-                Auxiliar veterinario ATV especializada en fisoterapia y
-                rehabilitación equina.
+                Técnico especializado en el uso de cámaras termográficas en
+                caballos deportivos.
               </li>
               <li>
                 Docente de Osteopatía humana y equina en America Latina y
@@ -52,36 +52,36 @@ const ImagenTextQuienes = () => {
           </h5>
         </div>
       </section>
-      <section className="row py-5">
-        <div className="col-lg-6 animate__animated  animate__backInUp py-2">
-          <article
-            className="text-white py-4 text-center"
-            style={{ backgroundColor: "#898B8D" }}
-          >
-            <p style={{ fontSize: "14px" }}>
-              Atendió más de{" "}
-              <span style={{ fontSize: "26px", fontWeight: "bold" }}>
-                <Counter endValue={1000} />
-              </span>{" "}
-              caballos.
-            </p>
-          </article>
-        </div>
-        <div className="col-lg-6 animate__animated  animate__backInUp py-2">
-          <article
-            className="text-white py-4 text-center"
-            style={{ backgroundColor: "#898B8D" }}
-          >
-            <p style={{ fontSize: "14px" }}>
-              Tiene más de{" "}
-              <span style={{ fontSize: "26px", fontWeight: "bold" }}>
-                <Counter endValue={10000} />
-              </span>{" "}
-              horas de formación académica.
-            </p>
-          </article>
-        </div>
-      </section>
+      {/* <section className="row py-5">
+          <div className="col-lg-6 animate__animated  animate__backInUp py-2">
+            <article
+              className="text-white py-4 text-center"
+              style={{ backgroundColor: "#898B8D" }}
+            >
+              <p style={{ fontSize: "14px" }}>
+                Atendió más de{" "}
+                <span style={{ fontSize: "26px", fontWeight: "bold" }}>
+                  <Counter endValue={1000} />
+                </span>{" "}
+                caballos.
+              </p>
+            </article>
+          </div>
+          <div className="col-lg-6 animate__animated  animate__backInUp py-2">
+            <article
+              className="text-white py-4 text-center"
+              style={{ backgroundColor: "#898B8D" }}
+            >
+              <p style={{ fontSize: "14px" }}>
+                Tiene más de{" "}
+                <span style={{ fontSize: "26px", fontWeight: "bold" }}>
+                  <Counter endValue={10000} />
+                </span>{" "}
+                horas de formación académica.
+              </p>
+            </article>
+          </div>
+        </section> */}
       <section>
         <MiHistoria />
       </section>
