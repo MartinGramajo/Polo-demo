@@ -13,6 +13,7 @@ import Empresa from "./views/Empresa";
 import Home2 from "./views/Home2";
 import ComoTrabajamos from "./views/ComoTrabajamos";
 import CamaraTermografica from "./views/CamaraTermografica";
+import BlogScreen from "./views/BlogScreen";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route exact path="/novedades" element={<Novedades />} />
           <Route exact path="/contacto" element={<Contacto />} />
           <Route exact path="/como-trabajamos" element={<ComoTrabajamos />} />
+          <Route exact path="/blog" element={<BlogScreen />} />
           <Route exact path="/camara" element={<CamaraTermografica />} />
         </Routes>
         <Footer />
