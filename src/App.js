@@ -14,13 +14,15 @@ import Home2 from "./views/Home2";
 import ComoTrabajamos from "./views/ComoTrabajamos";
 import CamaraTermografica from "./views/CamaraTermografica";
 import BlogScreen from "./views/BlogScreen";
+import CalendlyWidget from "./components/CalendlyWidget";
 
 function App() {
   return (
     <div className="d-flex flex-column min-vh-100 " id="top">
       <HashRouter>
         <NavReact />
-        <Wsp />
+        {/* <Wsp /> */}
+        <CalendlyWidget />
         <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<Home2 />} />

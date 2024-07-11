@@ -10,6 +10,7 @@ import Swal from "sweetalert2";
 import { useRef } from "react";
 import ContactoForm from "../components/ContactoForm";
 import PregFrecuentes from "../components/PregFrecuentes";
+import CalendlyWidget from "../components/CalendlyWidget";
 
 const Home2 = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -97,9 +98,7 @@ const Home2 = () => {
           prevenir lesiones en tus caballos de polo
         </h6>
       </article>
-      <article>
-        <ContactoContenido />
-      </article>
+      <article>{/* <ContactoContenido /> */}</article>
       <article className="container">
         <h6
           className="montserrat-regular"
