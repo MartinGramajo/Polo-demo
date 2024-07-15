@@ -872,3 +872,12 @@ body {
     opacity: 0.9;
   }
 }
+
+.blog-card-img {
+  height: 400px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+
+.blog-card {
+  margin-bottom: 20px; /* Espacio entre las cartas */
+}

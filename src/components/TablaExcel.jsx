@@ -48,17 +48,22 @@ const BlogPage = () => {
       ) : (
         blogEntries.map((entry, index) => (
           <Row key={index} className="mb-3">
-            <Col md={4}>
-              <Card style={{ width: "28rem" }}>
-                <Card.Img variant="top" src={entry.foto} alt={entry.titulo} />
+            <Col md={12}>
+              <Card className="blog-card">
+                <Card.Img
+                  variant="top"
+                  src={entry.foto}
+                  alt={entry.titulo}
+                  className="blog-card-img"
+                />
                 <Card.Body>
                   <Card.Title>{entry.titulo}</Card.Title>
                   <Card.Text>{entry.descripcion}</Card.Text>
                   <Button
-                    variant="primary"
+                    className="ver-mas-btn-sidebar text-white montserrat-bold"
                     onClick={() => handleOpenDetailModal(index)}
                   >
-                    Ver detalle
+                    Ver mas
                   </Button>
                 </Card.Body>
               </Card>
@@ -71,20 +76,69 @@ const BlogPage = () => {
               onHide={handleCloseDetailModal}
             >
               <Modal.Header closeButton>
-                <Modal.Title>Detalles</Modal.Title>
+                <Modal.Title>{entry.titulo1}</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                <h3>{entry.titulo1}</h3>
-                <p>{entry.descripcion1}</p>
-                <h3>{entry.titulo2}</h3>
-                <p>{entry.descripcion2}</p>
-                <h3>{entry.titulo3}</h3>
-                <ul>
-                  {entry.descripcionLista.split("\n").map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ul>
-                {/* Repetir para todos los títulos y descripciones adicionales */}
+                <h6>{entry.descripcion1}</h6>
+                <div className="py-2">
+                  <h4>{entry.titulo2}</h4>
+                  <h6>{entry.descripcion2}</h6>
+                </div>
+                <div className="py-2">
+                  <h4>{entry.titulo4}</h4>
+                  <h6>{entry.descripcion4}</h6>
+                </div>
+                <div className="py-2">
+                  <h4>{entry.titulo3}</h4>
+                  <ul className="h6">
+                    {entry.descripcionLista.split("\n").map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="py-2">
+                  <h4>{entry.titulolista2}</h4>
+                  <h6>{entry.titulolista2descripcion}</h6>
+                  <ol className="h6">
+                    {entry.descripcionlista2.split("\n").map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ol>
+                </div>
+                <div className="py-2">
+                  <h4>{entry.titulolista3}</h4>
+                  <h6>{entry.titulolista3descripcion}</h6>
+                  <ul className="h6">
+                    {entry.descripcionlista3.split("\n").map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="py-2">
+                  <h4>{entry.titulo5}</h4>
+                  <h6>{entry.descripcion5}</h6>
+                </div>
+                <div className="py-2">
+                  <h4>{entry.titulolista4}</h4>
+                  <h6>{entry.titulolista4descripcion}</h6>
+                  <ul className="h6">
+                    {entry.descripcionlista4.split("\n").map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="py-2">
+                  <h4>{entry.titulo6}</h4>
+                  <h6>{entry.titulodescripcion6}</h6>
+                </div>
+                <div className="py-2">
+                  <h4>References</h4>
+                  <ul className="h6">
+                    {entry.referencias.split("\n").map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
               </Modal.Body>
               <Modal.Footer>
                 <Button variant="secondary" onClick={handleCloseDetailModal}>

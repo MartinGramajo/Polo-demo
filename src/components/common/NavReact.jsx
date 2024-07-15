@@ -99,11 +99,11 @@ const NavReact = () => {
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
-                to="/quien/soy"
+                to="/blog"
                 onClick={cerrar}
                 className="tamaño-medium color-blanco mx-2 my-auto"
               >
-                QUIENES
+                NOTAS
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
