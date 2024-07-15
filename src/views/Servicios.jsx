@@ -76,7 +76,10 @@ const Servicios = () => {
           </h1>
         </div>
         <article className="container pb-4">
-          <h6 className="montserrat-regular" style={{ fontSize: "20px" }}>
+          <h6
+            className="montserrat-regular py-5-mobile"
+            style={{ fontSize: "20px" }}
+          >
             Experimente los beneficios de trabajar con Polo Salud mediante sus
             servicios diseñados para optimizar el rendimiento de los caballos de
             polo y prevenir lesiones
@@ -122,7 +125,10 @@ const Servicios = () => {
           </section>
         </div>
         <article className="container pb-4 text-center">
-          <h6 className="montserrat-regular" style={{ fontSize: "20px" }}>
+          <h6
+            className="montserrat-regular py-5-mobile"
+            style={{ fontSize: "20px" }}
+          >
             Conoce más cómo trabajamos y nuestros Planes de tratamiento para
             organizaciones de polo
           </h6>

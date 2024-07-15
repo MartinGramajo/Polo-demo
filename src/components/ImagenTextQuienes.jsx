@@ -18,38 +18,40 @@ const ImagenTextQuienes = () => {
         <div className="col-lg-6 col-12">
           <h4
             style={{ fontSize: "24px" }}
-            className="pt-4 container montserrat-bold text-dark lato-regular py-2 animate__animated  animate__backInUp"
+            className="pt-4 py-5-mobile container montserrat-bold text-dark lato-regular py-2 animate__animated  animate__backInUp"
           >
             María Luján Arias es la Directora de la empresa Polo Salud.
           </h4>
-          <h5 style={{ fontSize: "18px" }}>
+          <h5 className="container py-4" style={{ fontSize: "18px" }}>
             Para llevar a cabo la misión de la empresa y dependiendo en que país
             esté trabajando, se asocia con profesionales cuidadosamente
             seleccionados.
           </h5>
-          <h5 style={{ fontSize: "18px" }}>
-            Luján es: <br />
-            <ul>
-              <li>
-                Diplomada en Osteopatía por la European alliance y Animal
-                Osteopathy International reconocida por la European School of
-                Osteopathy de Inglaterra.
-              </li>
-              <li>Miembro del registro de Osteopatas de España ROE N°783.</li>
-              <li>
-                Auxiliar veterinario ATV especializada en fisoterapia y
-                rehabilitación equina.
-              </li>
-              <li>
-                Técnico especializado en el uso de cámaras termográficas en
-                caballos deportivos.
-              </li>
-              <li>
-                Docente de Osteopatía humana y equina en America Latina y
-                España.
-              </li>
-            </ul>
-          </h5>
+          <div className="container">
+            <h5 style={{ fontSize: "18px" }}>
+              <span className="py-2">Luján es:</span>
+              <ul className="pt-4">
+                <li>
+                  Diplomada en Osteopatía por la European alliance y Animal
+                  Osteopathy International reconocida por la European School of
+                  Osteopathy de Inglaterra.
+                </li>
+                <li>Miembro del registro de Osteopatas de España ROE N°783.</li>
+                <li>
+                  Auxiliar veterinario ATV especializada en fisoterapia y
+                  rehabilitación equina.
+                </li>
+                <li>
+                  Técnico especializado en el uso de cámaras termográficas en
+                  caballos deportivos.
+                </li>
+                <li>
+                  Docente de Osteopatía humana y equina en America Latina y
+                  España.
+                </li>
+              </ul>
+            </h5>
+          </div>
         </div>
       </section>
       {/* <section className="row py-5">

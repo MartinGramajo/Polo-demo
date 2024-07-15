@@ -90,8 +90,8 @@ const ComoTrabajamos = () => {
                         key={idx}
                         className={
                           idx === 0
-                            ? "pt-2 montserrat-regular"
-                            : "py-4 montserrat-regular"
+                            ? "pt-2 montserrat-regular h6"
+                            : "py-4 montserrat-regular h6"
                         }
                       >
                         <FontAwesomeIcon
@@ -109,7 +109,7 @@ const ComoTrabajamos = () => {
           ))}
         </section>
         <div className="container animate__animated animate__fadeInUp py-4">
-          <blockquote className="blockquote text-center">
+          <blockquote className="blockquote text-center py-5-mobile">
             <p className="mb-0">
               Nuestro espíritu es innovador, colaborativo y eficaz. Nuestras
               técnicas son no invasivas y sin doping. Nuestro alcance es

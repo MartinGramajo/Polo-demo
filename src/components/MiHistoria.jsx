@@ -35,10 +35,7 @@ function MiHistoria() {
               MI HISTORIA
             </h4>
             <div>
-              <h6
-                className="lato-regular py-2 animate__animated  animate__fadeInUp "
-                style={{ fontSize: "18px" }}
-              >
+              <h6 className="lato-regular py-2 animate__animated  animate__fadeInUp ">
                 Maria Lujan Arias nació el 19 de noviembre de 1982 en Buenos
                 Aires en una familia que siempre tuvo contacto con el campo y
                 los caballos y a la vez que inculcaron en ella una vida citadina
@@ -46,10 +43,7 @@ function MiHistoria() {
               </h6>
             </div>
             <div>
-              <h6
-                className="lato-regular py-2 animate__animated  animate__fadeInUp "
-                style={{ fontSize: "18px" }}
-              >
+              <h6 className="lato-regular py-2 animate__animated  animate__fadeInUp ">
                 De estar en contacto con caballos en la provincia de Buenos
                 Aires, a elegir una vida más citadina estudiando abogacía en la
                 UBA y trabajar en el poder judicial al mismo tiempo que
@@ -59,10 +53,7 @@ function MiHistoria() {
               </h6>
             </div>
             <div>
-              <h6
-                className="lato-regular py-2 animate__animated  animate__fadeInUp"
-                style={{ fontSize: "18px" }}
-              >
+              <h6 className="lato-regular py-2 animate__animated  animate__fadeInUp">
                 Quienes la conocen puEden dar cuenta que Maria Luján siempre
                 persigió sus sueños, y con paso firme, terminó formándose en las
                 mejores instituciones educativas y transformarse en una
@@ -70,10 +61,7 @@ function MiHistoria() {
               </h6>
             </div>
             <div>
-              <h6
-                className="lato-regular py-2 animate__animated  animate__fadeInUp"
-                style={{ fontSize: "18px" }}
-              >
+              <h6 className="lato-regular py-2 animate__animated  animate__fadeInUp">
                 Durante 10 años dirigió su propia clínica acompañando el
                 desempeño, rendimiento y calidad de vida de sus pacientes y
                 desde el 2024 creó la empresa PoloSalud, para poder concentrar
@@ -82,10 +70,7 @@ function MiHistoria() {
               </h6>
             </div>
             <div>
-              <h6
-                className="lato-regular py-2 aanimate__animated  animate__fadeInUp"
-                style={{ fontSize: "18px" }}
-              >
+              <h6 className="lato-regular py-2 aanimate__animated  animate__fadeInUp">
                 Además de Osteópata Diplomada es auxiliar veterinario
                 especializada en fisoterapia y rehabilitación equina, pionera en
                 el uso de cámaras termográficas en el deporte, docente de
@@ -94,10 +79,7 @@ function MiHistoria() {
               </h6>
             </div>
             <div>
-              <h6
-                className="lato-regular py-2 pb-5 animate__animated  animate__fadeInUp"
-                style={{ fontSize: "18px" }}
-              >
+              <h6 className="lato-regular py-2 pb-5 animate__animated  animate__fadeInUp">
                 Actualmente y con sus muchos movimientos de países, reside junto
                 a su familia en España y se traslada para brindar sus servicios
                 profesionales para deportistas y las mejores organizaciones de

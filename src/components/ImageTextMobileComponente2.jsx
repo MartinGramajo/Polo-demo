@@ -15,22 +15,24 @@ const ImageTextMobileComponent2 = () => {
 
       {/* Texto abajo */}
       <div className="container" style={{ width: "100%" }}>
-        <h3 className="montserrat-bold" style={{ fontSize: "18px" }}>
+        <h3 className="montserrat-bold mt-2" style={{ fontSize: "18px" }}>
           CÓMO TRABAJAMOS
         </h3>
-        <p className="montserrat-regular" style={{ fontSize: "14px" }}>
-          Trabajamos en los principales spots de polo más reconocidos. ESPAÑA,
-          INGLATERRA, FRANCIA Y ARGENTINA
-        </p>
-        <p className="montserrat-regular" style={{ fontSize: "14px" }}>
-          Ofrecemos servicios y planes de tratamiento in situ que se integran
-          perfectamente con las funciones diarias de cada organización.
-        </p>
-        <p className="montserrat-regular" style={{ fontSize: "14px" }}>
-          Trabajamos con organizaciones de polo que comparten nuestra misma
-          misión: cuidar a sus caballos y optimizar el desempeño de cada uno en
-          armonía
-        </p>
+        <div className="py-5-mobile">
+          <p className="montserrat-regular h6">
+            Trabajamos en los principales spots de polo más reconocidos. ESPAÑA,
+            INGLATERRA, FRANCIA Y ARGENTINA
+          </p>
+          <p className="montserrat-regular h6">
+            Ofrecemos servicios y planes de tratamiento in situ que se integran
+            perfectamente con las funciones diarias de cada organización.
+          </p>
+          <p className="montserrat-regular h6">
+            Trabajamos con organizaciones de polo que comparten nuestra misma
+            misión: cuidar a sus caballos y optimizar el desempeño de cada uno
+            en armonía
+          </p>
+        </div>
       </div>
     </div>
   );

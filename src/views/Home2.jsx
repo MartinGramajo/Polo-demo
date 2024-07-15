@@ -80,7 +80,7 @@ const Home2 = () => {
   return (
     <div>
       <BannerHome2Texto />
-      <article className="pt-4 container d-none d-lg-block">
+      <article className="pt-4 container d-none d-lg-block py-5">
         <h6 className="montserrat-regular" style={{ fontSize: "20px" }}>
           Polo Salud es una empresa que tiene por misión y objetivo brindar
           salud a los caballos de polo. <br /> Descubra como nuestros efectivos
@@ -88,7 +88,7 @@ const Home2 = () => {
           prevenir lesiones en tus caballos de polo
         </h6>
       </article>
-      <article className="pt-4 container d-lg-none d-block">
+      <article className="pt-4 container d-lg-none d-block py-5-mobile">
         <h6 className="montserrat-regular" style={{ fontSize: "16px" }}>
           Polo Salud es una empresa que tiene por misión y objetivo brindar
           salud a los caballos de polo. <br /> Descubra como nuestros efectivos
@@ -105,7 +105,9 @@ const Home2 = () => {
         >
           FAQ
         </h6>
-        <PregFrecuentes />
+        <div className="">
+          <PregFrecuentes />
+        </div>
       </article>
 
       <Modal show={showPopup} onHide={handleClose} animation={false}>

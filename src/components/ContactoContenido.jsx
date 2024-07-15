@@ -16,12 +16,14 @@ const ContactoContenido = () => {
           </h1>
         </div>
       </div>
-      <div className="d-flex justify-content-start py-4 d-lg-none d-block">
+      <div className="d-flex justify-content-start py-4 d-lg-none d-block py-5-mobile">
         <h1
           className="animate__animated  animate__fadeInLeft montserrat-bold"
           style={{ fontSize: "18px", fontWeight: "bold" }}
         >
-          CONECTA CON LOS EXPERTOS EN BIENESTAR EQUINO
+          Programe una consulta gratuita hoy para analizar cómo Polo Salud puede
+          ayudar a su organización calendly o rellene el siguiente formulario de
+          contacto
         </h1>
       </div>
       <div className="d-flex justify-content-start">
