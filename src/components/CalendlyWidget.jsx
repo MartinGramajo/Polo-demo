@@ -2,27 +2,38 @@ import React, { useEffect } from "react";
 
 const CalendlyWidget = () => {
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.async = true;
+    const loadCalendlyWidget = () => {
+      const head = document.querySelector("head");
+      const link = document.createElement("link");
+      link.href = "https://assets.calendly.com/assets/external/widget.css";
+      link.rel = "stylesheet";
+      head.appendChild(link);
 
-    script.onload = () => {
-      if (window.Calendly) {
-        window.Calendly.initBadgeWidget({
-          url: "https://calendly.com/marialujanarias-osteopatia",
-          text: "Solicitar consulta",
-          color: "#FE2D30",
-          textColor: "#ffffff",
-          branding: true,
-        });
-      }
+      const script = document.createElement("script");
+      script.src = "https://assets.calendly.com/assets/external/widget.js";
+      script.async = true;
+
+      script.onload = () => {
+        if (window.Calendly) {
+          window.Calendly.initBadgeWidget({
+            url: "https://calendly.com/marialujanarias-osteopatia",
+            text: "Solicitar consulta",
+            color: "#FE2D30",
+            textColor: "#ffffff",
+            branding: true,
+          });
+        }
+      };
+
+      document.body.appendChild(script);
+
+      return () => {
+        document.body.removeChild(script);
+        head.removeChild(link);
+      };
     };
 
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
+    loadCalendlyWidget();
   }, []);
 
   return (

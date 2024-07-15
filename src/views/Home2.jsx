@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "animate.css";
 import BannerHome2Texto from "../components/BannerHome2Texto";
-import Cartas from "../components/Cartas";
-import ContactoContenido from "../components/ContactoContenido";
 import "bootstrap/dist/css/bootstrap.min.css";
 import emailjs from "@emailjs/browser";
-import { Col, Form, Modal, Button, Row } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import Swal from "sweetalert2";
 import { useRef } from "react";
 import ContactoForm from "../components/ContactoForm";
@@ -98,7 +96,8 @@ const Home2 = () => {
           prevenir lesiones en tus caballos de polo
         </h6>
       </article>
-      <article>{/* <ContactoContenido /> */}</article>
+
+      <CalendlyWidget />
       <article className="container">
         <h6
           className="montserrat-regular"

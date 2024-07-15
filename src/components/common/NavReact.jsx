@@ -113,13 +113,22 @@ const NavReact = () => {
               >
                 CONTACTO
               </Nav.Link>
-              <div className="d-lg-block d-none">
+              <div className="d-block d-xl-none">
+                <Button
+                  className="border-0"
+                  style={{ backgroundColor: "#FE2D30" }}
+                  onClick={handleShow}
+                >
+                  <Image src={mundito} alt="logo 1" className="w-50" fluid />
+                </Button>
+              </div>
+              <div className="d-xl-block d-none">
                 <Button
                   className=" position-fixed  top-0 end-0 m-3 border-0"
                   style={{ backgroundColor: "#FE2D30" }}
                   onClick={handleShow}
                 >
-                  <Image src={mundito} alt="logo 1" className="" fluid />
+                  <Image src={mundito} alt="logo 1" className="w-50" fluid />
                 </Button>
 
                 <Offcanvas

@@ -22,7 +22,7 @@ function App() {
       <HashRouter>
         <NavReact />
         {/* <Wsp /> */}
-        <CalendlyWidget />
+        {/* <CalendlyWidget /> */}
         <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<Home2 />} />
