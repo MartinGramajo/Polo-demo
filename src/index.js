@@ -7,23 +7,24 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import LanguageProvider from './context/LanguageContext';
 import LanguageServiceProvider from './context/LanguageContextService';
 import LanguageServiceCardsProvider from './context/LanguageContextServiceCards';
+import LanguageContactProvider from './context/LanguageContextContact';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LanguageServiceProvider>
-      <LanguageServiceCardsProvider>
+    <LanguageContactProvider>
+      <LanguageServiceProvider>
+        <LanguageServiceCardsProvider>
+          <LanguageProvider>
+            <App />
+          </LanguageProvider>
+        </LanguageServiceCardsProvider>
+      </LanguageServiceProvider>
 
-        <LanguageProvider>
-          <App />
-        </LanguageProvider>
+    </LanguageContactProvider>
 
-      </LanguageServiceCardsProvider>
-
-
-
-    </LanguageServiceProvider>
   </React.StrictMode>
 );
 

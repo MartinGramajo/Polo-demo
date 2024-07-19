@@ -1,7 +1,21 @@
 import "animate.css";
 import ContactoForm from "./ContactoForm";
+import { useContext } from "react";
+import { LanguageContextContact } from "../context/LanguageContextContact";
 
 const ContactoContenido = () => {
+  const { language, translations, setLanguage } = useContext(
+    LanguageContextContact
+  );
+
+  console.log("Servicios ~ translations:", translations);
+
+  const getTranslation = (key) => {
+    const translationKey = `${key}${language.toUpperCase()}`;
+    const translation = translations[1] ? translations[1][translationKey] : "";
+    return translation;
+  };
+
   return (
     <section className="container">
       <div className="py-4 d-none d-lg-block">
@@ -10,9 +24,7 @@ const ContactoContenido = () => {
             className="animate__animated  animate__fadeInLeft montserrat-bold"
             style={{ fontSize: "22px", fontWeight: "bold" }}
           >
-            Programe una consulta gratuita hoy para analizar cómo Polo Salud
-            puede ayudar a su organización calendly o rellene el siguiente
-            formulario de contacto
+            {getTranslation("tituloContacto")}
           </h1>
         </div>
       </div>
@@ -21,9 +33,7 @@ const ContactoContenido = () => {
           className="animate__animated  animate__fadeInLeft montserrat-bold"
           style={{ fontSize: "18px", fontWeight: "bold" }}
         >
-          Programe una consulta gratuita hoy para analizar cómo Polo Salud puede
-          ayudar a su organización calendly o rellene el siguiente formulario de
-          contacto
+          {getTranslation("tituloContacto")}
         </h1>
       </div>
       <div className="d-flex justify-content-start">

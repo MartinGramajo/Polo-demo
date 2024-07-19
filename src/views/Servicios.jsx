@@ -69,8 +69,6 @@ const Servicios = () => {
     LanguageContextService
   );
 
-  console.log("Servicios ~ translations:", translations);
-
   const getTranslation = (key) => {
     const translationKey = `${key}${language.toUpperCase()}`;
     const translation = translations[1] ? translations[1][translationKey] : "";
@@ -105,45 +103,6 @@ const Servicios = () => {
         <article>
           <CardServicios />
         </article>
-        {/* <div className="container animate__animated animate__fadeInUp">
-          <section className="row">
-            {cartasData.map((carta, index) => (
-              <div key={index} className="col-lg-6 mb-4">
-                <Card className="border border-danger rounded-3 cartas-planes2">
-                  <Card.Img
-                    variant="top"
-                    src={carta.imgSrc}
-                    className="card-img"
-                  />
-                  <Card.Body>
-                    <Card.Title className="montserrat-bold">
-                      {carta.titulo}
-                    </Card.Title>
-                    <ul className="list-unstyled">
-                      {carta.puntos.map((punto, idx) => (
-                        <li
-                          key={idx}
-                          className={
-                            idx === 0
-                              ? "pt-2 montserrat-regular"
-                              : "py-4 montserrat-regular"
-                          }
-                        >
-                          <FontAwesomeIcon
-                            icon={faCheck}
-                            className="me-2"
-                            style={{ color: "#8E9092" }}
-                          />
-                          <strong className="montserrat-bold">{punto}</strong>{" "}
-                        </li>
-                      ))}
-                    </ul>
-                  </Card.Body>
-                </Card>
-              </div>
-            ))}
-          </section>
-        </div> */}
         <article className="container pb-4 text-center">
           <h6
             className="montserrat-regular py-5-mobile"

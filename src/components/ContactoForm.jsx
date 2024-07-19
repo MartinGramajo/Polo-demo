@@ -1,10 +1,21 @@
 import emailjs from "@emailjs/browser";
 import { Col, Form, InputGroup, Row, Button } from "react-bootstrap";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Swal from "sweetalert2";
 import { useRef } from "react";
+import { LanguageContextContact } from "../context/LanguageContextContact";
 
 export default function ContactoForm() {
+  const { language, translations, setLanguage } = useContext(
+    LanguageContextContact
+  );
+
+  const getTranslation = (key) => {
+    const translationKey = `${key}${language.toUpperCase()}`;
+    const translation = translations[1] ? translations[1][translationKey] : "";
+    return translation;
+  };
+
   const [validated, setValidated] = useState(false);
   const form = useRef();
 
@@ -64,11 +75,11 @@ export default function ContactoForm() {
                   className="montserrat-bold"
                   style={{ fontWeight: "bold", fontSize: "18px" }}
                 >
-                  Nombre*
+                  {getTranslation("nombreContacto")}*
                 </Form.Label>
                 <Form.Control type="text" required name="name" />
                 <Form.Control.Feedback type="invalid">
-                  Ingrese su nombre completo por favor.
+                  {getTranslation("avisoNombreContacto")}*
                 </Form.Control.Feedback>
               </Form.Group>
               <Form.Group as={Col} md="12" controlId="validationCustom04">
@@ -76,7 +87,7 @@ export default function ContactoForm() {
                   className="montserrat-bold"
                   style={{ fontWeight: "bold", fontSize: "18px" }}
                 >
-                  Whatsapp*
+                  {getTranslation("celContacto")}*
                 </Form.Label>
                 <Form.Control
                   className="mb-2"
@@ -85,7 +96,7 @@ export default function ContactoForm() {
                   name="cel"
                 />
                 <Form.Control.Feedback type="invalid">
-                  Ingrese su número de whatsapp completo por favor.
+                  {getTranslation("avisocelContacto")}*
                 </Form.Control.Feedback>
               </Form.Group>
             </Row>
@@ -99,7 +110,7 @@ export default function ContactoForm() {
                 </Form.Label>
                 <Form.Control type="email" required name="email" />
                 <Form.Control.Feedback type="invalid">
-                  Ingrese su Email por favor.
+                  {getTranslation("avisoEmailContacto")}*
                 </Form.Control.Feedback>
               </Form.Group>
               <Form.Group as={Col} md="12" controlId="validationCustom03">
@@ -107,7 +118,7 @@ export default function ContactoForm() {
                   className="montserrat-bold"
                   style={{ fontWeight: "bold", fontSize: "18px" }}
                 >
-                  Consulta
+                  {getTranslation("consultaContacto")}*
                 </Form.Label>
                 <InputGroup>
                   <Form.Control className="mb-2" as="textarea" name="msj" />
