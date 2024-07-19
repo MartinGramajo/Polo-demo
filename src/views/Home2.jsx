@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "animate.css";
 import BannerHome2Texto from "../components/BannerHome2Texto";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -9,8 +9,11 @@ import { useRef } from "react";
 import ContactoForm from "../components/ContactoForm";
 import PregFrecuentes from "../components/PregFrecuentes";
 import CalendlyWidget from "../components/CalendlyWidget";
+import { LanguageContext } from "../context/LanguageContext";
 
 const Home2 = () => {
+  const { language, translations, setLanguage } = useContext(LanguageContext);
+
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
@@ -77,35 +80,50 @@ const Home2 = () => {
     }
   };
 
+  const getTranslation = (key) => {
+    const translationKey = `${key}Home${language.toUpperCase()}`;
+    const translation = translations[1] ? translations[1][translationKey] : "";
+    console.log("Translation Key:", translationKey);
+    console.log("Translation:", translation);
+    return translation;
+  };
+
   return (
     <div>
+      <select value={language} onChange={(e) => setLanguage(e.target.value)}>
+        <option value="es">Español</option>
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+      </select>
       <BannerHome2Texto />
       <article className="pt-4 container d-none d-lg-block py-5">
         <h6 className="montserrat-regular" style={{ fontSize: "20px" }}>
-          Polo Salud es una empresa que tiene por misión y objetivo brindar
-          salud a los caballos de polo. <br /> Descubra como nuestros efectivos
-          e innovadores servicios pueden mejorar el rendimiento, la salud y
-          prevenir lesiones en tus caballos de polo
+          {getTranslation("titulo")}
+          <br />
+          {getTranslation("parrafo1")}
+          <br />
+          {getTranslation("parrafo2")}
         </h6>
       </article>
-      <article className="pt-4 container d-lg-none d-block py-5-mobile">
+      <article className="py-2 container d-lg-none d-block py-5-mobile">
         <h6 className="montserrat-regular" style={{ fontSize: "16px" }}>
-          Polo Salud es una empresa que tiene por misión y objetivo brindar
-          salud a los caballos de polo. <br /> Descubra como nuestros efectivos
-          e innovadores servicios pueden mejorar el rendimiento, la salud y
-          prevenir lesiones en tus caballos de polo
+          {getTranslation("titulo")}
+          <br />
+          {getTranslation("parrafo1")}
+          <br />
+          {getTranslation("parrafo2")}
         </h6>
       </article>
 
       <CalendlyWidget />
-      <article className="container">
+      <article className="container pt-4">
         <h6
           className="montserrat-regular"
           style={{ fontSize: "22px", fontWeight: "bold" }}
         >
           FAQ
         </h6>
-        <div className="">
+        <div className="pb-5 pt-2">
           <PregFrecuentes />
         </div>
       </article>
