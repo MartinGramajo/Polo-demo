@@ -2,9 +2,9 @@ import React, { createContext, useState, useEffect } from "react";
 import axios from "axios";
 import Papa from "papaparse";
 
-export const LanguageContext = createContext();
+export const LanguageContextServiceCards = createContext();
 
-const LanguageProvider = ({ children }) => {
+const LanguageServiceCardsProvider = ({ children }) => {
   const [language, setLanguage] = useState("es"); // idioma por defecto, 'es' para español
   const [translations, setTranslations] = useState({});
 
@@ -12,7 +12,7 @@ const LanguageProvider = ({ children }) => {
     const fetchTranslations = async () => {
       try {
         const response = await axios.get(
-          "https://docs.google.com/spreadsheets/d/e/2PACX-1vTTmSJGxSNe2kImEIVgKhtxknXLKAp_VGisaA8Uw-4k0loYDNSjyCkIhfg-E_VwLT7XFxobD0H0rMWz/pub?output=csv"
+          "https://docs.google.com/spreadsheets/d/e/2PACX-1vT5uzbHvnfL7by920NLATs8ysafau5kwg1HYc6hhEBXIUhfw39Tiumak0J7bCt6rl01v2RUfsAQw7TO/pub?output=csv"
         );
         const parsedData = Papa.parse(response.data, { header: true }).data;
         const translationsData = {};
@@ -29,10 +29,12 @@ const LanguageProvider = ({ children }) => {
   }, []);
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, translations }}>
+    <LanguageContextServiceCards.Provider
+      value={{ language, setLanguage, translations }}
+    >
       {children}
-    </LanguageContext.Provider>
+    </LanguageContextServiceCards.Provider>
   );
 };
 
-export default LanguageProvider;
+export default LanguageServiceCardsProvider;

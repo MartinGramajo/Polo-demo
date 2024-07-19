@@ -83,8 +83,6 @@ const Home2 = () => {
   const getTranslation = (key) => {
     const translationKey = `${key}Home${language.toUpperCase()}`;
     const translation = translations[1] ? translations[1][translationKey] : "";
-    console.log("Translation Key:", translationKey);
-    console.log("Translation:", translation);
     return translation;
   };
 
