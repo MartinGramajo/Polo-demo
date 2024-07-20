@@ -28,9 +28,31 @@ const LanguageServiceProvider = ({ children }) => {
     fetchTranslations();
   }, []);
 
+  const [translationsCards, setTranslationsCards] = useState({});
+
+  useEffect(() => {
+    const fetchTranslations = async () => {
+      try {
+        const response = await axios.get(
+          "https://docs.google.com/spreadsheets/d/e/2PACX-1vT5uzbHvnfL7by920NLATs8ysafau5kwg1HYc6hhEBXIUhfw39Tiumak0J7bCt6rl01v2RUfsAQw7TO/pub?output=csv"
+        );
+        const parsedData = Papa.parse(response.data, { header: true }).data;
+        const translationsData = {};
+        parsedData.forEach((row) => {
+          translationsData[row.id] = row;
+        });
+        setTranslationsCards(translationsData);
+      } catch (error) {
+        console.error("Error fetching translations:", error);
+      }
+    };
+
+    fetchTranslations();
+  }, []);
+
   return (
     <LanguageContextService.Provider
-      value={{ language, setLanguage, translations }}
+      value={{ language, setLanguage, translations, translationsCards }}
     >
       {children}
     </LanguageContextService.Provider>

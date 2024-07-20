@@ -3,22 +3,22 @@ import imagenKinesio from "../assets/img/kinesio.jpg"; // Importa tus imágenes 
 import imagenTermografica from "../assets/img/termo.png";
 import imagenTerapiaManual from "../assets/img/terapiaManual.jpg";
 import imagenOsteopatia from "../assets/img/osteopatia.jpg";
-import imagenAnalisis from "../assets/img/analisis.jpg";
 import { Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { LanguageContextServiceCards } from "../context/LanguageContextServiceCards";
+import { LanguageContextService } from "../context/LanguageContextService";
 
 const CardServicios = () => {
-  const { language, translations, setLanguage } = useContext(
-    LanguageContextServiceCards
+  const { language, translationsCards, setLanguage } = useContext(
+    LanguageContextService
   );
 
   const getTranslation = (key) => {
     const translationKey = `${key}${language.toUpperCase()}`;
-    const translation = translations[1] ? translations[1][translationKey] : "";
-    console.log("Translation Key:", translationKey);
-    console.log("Translation:", translation);
+    const translation = translationsCards[1]
+      ? translationsCards[1][translationKey]
+      : "";
+
     return translation;
   };
 
@@ -57,7 +57,7 @@ const CardServicios = () => {
     //   ],
     // },
   ];
-  console.log("CardServicios ~ translations:", translations);
+
   return (
     <div>
       <div className="container animate__animated animate__fadeInUp">

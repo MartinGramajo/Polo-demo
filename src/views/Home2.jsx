@@ -10,6 +10,7 @@ import ContactoForm from "../components/ContactoForm";
 import PregFrecuentes from "../components/PregFrecuentes";
 import CalendlyWidget from "../components/CalendlyWidget";
 import { LanguageContext } from "../context/LanguageContext";
+import NavReact from "../components/common/NavReact";
 
 const Home2 = () => {
   const { language, translations, setLanguage } = useContext(LanguageContext);
@@ -88,11 +89,7 @@ const Home2 = () => {
 
   return (
     <div>
-      <select value={language} onChange={(e) => setLanguage(e.target.value)}>
-        <option value="es">Español</option>
-        <option value="en">English</option>
-        <option value="fr">Français</option>
-      </select>
+      <NavReact />
       <BannerHome2Texto />
       <article className="pt-4 container d-none d-lg-block py-5">
         <h6 className="montserrat-regular" style={{ fontSize: "20px" }}>

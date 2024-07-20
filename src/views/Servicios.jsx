@@ -11,6 +11,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import BannerServicios from "../components/BannerServicios";
 import { LanguageContextService } from "../context/LanguageContextService";
 import CardServicios from "../components/CardServicios";
+import NavReactService from "../components/common/NavReactService";
 
 const Servicios = () => {
   const handleContactClick = () => {
@@ -77,11 +78,7 @@ const Servicios = () => {
 
   return (
     <div>
-      <select value={language} onChange={(e) => setLanguage(e.target.value)}>
-        <option value="es">Español</option>
-        <option value="en">English</option>
-        <option value="fr">Français</option>
-      </select>
+      <NavReactService />
       <BannerServicios />
       <article className="py-4" style={{ textAlign: "start" }}>
         <div className="pt-4 container">

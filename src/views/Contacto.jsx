@@ -4,6 +4,7 @@ import bannerServicios from "../assets/img/slider10.png";
 import bannerServiciosCuadrada from "../assets/img/slider10.png";
 import { LanguageContextContact } from "../context/LanguageContextContact";
 import { useContext } from "react";
+import NavReactContacto from "../components/common/NavReactContacto";
 
 const Contacto = () => {
   const { language, translations, setLanguage } = useContext(
@@ -14,6 +15,7 @@ const Contacto = () => {
 
   return (
     <div>
+      <NavReactContacto />
       <>
         <div className="bannerContainer d-none d-md-block">
           <Image
@@ -30,11 +32,6 @@ const Contacto = () => {
           />
         </div>
       </>
-      <select value={language} onChange={(e) => setLanguage(e.target.value)}>
-        <option value="es">Español</option>
-        <option value="en">English</option>
-        <option value="fr">Français</option>
-      </select>
       <ContactoContenido />
     </div>
   );

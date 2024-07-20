@@ -8,22 +8,26 @@ import LanguageProvider from './context/LanguageContext';
 import LanguageServiceProvider from './context/LanguageContextService';
 import LanguageServiceCardsProvider from './context/LanguageContextServiceCards';
 import LanguageContactProvider from './context/LanguageContextContact';
+import { LanguageSupProvider } from './context/LanguageSupContext';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LanguageContactProvider>
-      <LanguageServiceProvider>
-        <LanguageServiceCardsProvider>
-          <LanguageProvider>
-            <App />
-          </LanguageProvider>
-        </LanguageServiceCardsProvider>
-      </LanguageServiceProvider>
+    <LanguageSupProvider>
+      <LanguageContactProvider>
+        <LanguageServiceProvider>
+          <LanguageServiceCardsProvider>
+            <LanguageProvider>
+              <App />
+            </LanguageProvider>
+          </LanguageServiceCardsProvider>
+        </LanguageServiceProvider>
 
-    </LanguageContactProvider>
+      </LanguageContactProvider>
+
+    </LanguageSupProvider>
 
   </React.StrictMode>
 );

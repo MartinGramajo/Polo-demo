@@ -889,3 +889,9 @@ body {
     padding-bottom: 3rem;
   }
 }
+
+.btn-banderas {
+  width: 48px !important;
+  background-color: transparent !important;
+  border: none !important;
+}

@@ -6,7 +6,7 @@ export const LanguageContextServiceCards = createContext();
 
 const LanguageServiceCardsProvider = ({ children }) => {
   const [language, setLanguage] = useState("es"); // idioma por defecto, 'es' para español
-  const [translations, setTranslations] = useState({});
+  const [translationsCards, setTranslationsCards] = useState({});
 
   useEffect(() => {
     const fetchTranslations = async () => {
@@ -19,7 +19,7 @@ const LanguageServiceCardsProvider = ({ children }) => {
         parsedData.forEach((row) => {
           translationsData[row.id] = row;
         });
-        setTranslations(translationsData);
+        setTranslationsCards(translationsData);
       } catch (error) {
         console.error("Error fetching translations:", error);
       }
@@ -30,7 +30,7 @@ const LanguageServiceCardsProvider = ({ children }) => {
 
   return (
     <LanguageContextServiceCards.Provider
-      value={{ language, setLanguage, translations }}
+      value={{ language, setLanguage, translationsCards }}
     >
       {children}
     </LanguageContextServiceCards.Provider>
