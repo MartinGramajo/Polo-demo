@@ -7,12 +7,10 @@ import FooterBiografia from "../components/common/FooterBiografia";
 const Empresa = () => {
   return (
     <div>
-      <NavReactBiografia />
       <BannerEmpresa />
       <div className="py-4">
         <BiografiaContenido />
       </div>
-      <FooterBiografia />
     </div>
   );
 };
