@@ -1,26 +1,29 @@
-import React from "react";
+import React, { useContext } from "react";
 import backgroundImage from "../assets/img/mapaMundi.png";
+import { LanguageContextComoTrabajamos } from "../context/LanguageContextComoTrabajamos";
 
 const ImageTextComponent2 = () => {
+  const { language, translations } = useContext(LanguageContextComoTrabajamos);
+
+  const getTranslation = (key) => {
+    const translationKey = `${key}${language.toUpperCase()}`;
+    const translation = translations[1] ? translations[1][translationKey] : "";
+    return translation;
+  };
   return (
     <div className="d-flex align-items-center">
-      {/* Texto a la derecha */}
       <div className="container" style={{ width: "50%" }}>
         <h3 className="montserrat-bold" style={{ fontSize: "32px" }}>
-          CÓMO TRABAJAMOS
+          {getTranslation("tituloPagina")}
         </h3>
         <p className="montserrat-regular" style={{ fontSize: "18px" }}>
-          Trabajamos en los principales spots de polo más reconocidos. ESPAÑA,
-          INGLATERRA, FRANCIA Y ARGENTINA
+          {getTranslation("parrafo1")}
         </p>
         <p className="montserrat-regular" style={{ fontSize: "18px" }}>
-          Ofrecemos servicios y planes de tratamiento in situ que se integran
-          perfectamente con las funciones diarias de cada organización.
+          {getTranslation("parrafo2")}
         </p>
         <p className="montserrat-regular" style={{ fontSize: "18px" }}>
-          Trabajamos con organizaciones de polo que comparten nuestra misma
-          misión: cuidar a sus caballos y optimizar el desempeño de cada uno en
-          armonía
+          {getTranslation("parrafo3")}
         </p>
       </div>
       {/* Imagen cuadrada a la izquierda */}

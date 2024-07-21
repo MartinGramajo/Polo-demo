@@ -747,7 +747,7 @@ body {
 }
 
 .cartas-planes {
-  height: 350px !important;
+  height: 100% !important;
 }
 
 @media screen and (max-width: 1024px) {
@@ -884,8 +884,8 @@ body {
 
 @media screen and (max-width: 800px) {
   .py-5-mobile {
-    margin-top: 2rem;
-    padding-top: 3rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
     padding-bottom: 3rem;
   }
 }

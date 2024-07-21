@@ -6,9 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css";
 import LanguageProvider from './context/LanguageContext';
 import LanguageServiceProvider from './context/LanguageContextService';
-import LanguageServiceCardsProvider from './context/LanguageContextServiceCards';
 import LanguageContactProvider from './context/LanguageContextContact';
 import { LanguageSupProvider } from './context/LanguageSupContext';
+import LanguageComoTrabajamosProvider from './context/LanguageContextComoTrabajamos';
 
 
 
@@ -17,18 +17,15 @@ root.render(
   <React.StrictMode>
     <LanguageSupProvider>
       <LanguageContactProvider>
-        <LanguageServiceProvider>
-          <LanguageServiceCardsProvider>
+        <LanguageComoTrabajamosProvider>
+          <LanguageServiceProvider>
             <LanguageProvider>
               <App />
             </LanguageProvider>
-          </LanguageServiceCardsProvider>
-        </LanguageServiceProvider>
-
+          </LanguageServiceProvider>
+        </LanguageComoTrabajamosProvider>
       </LanguageContactProvider>
-
     </LanguageSupProvider>
-
   </React.StrictMode>
 );
 

@@ -1,0 +1,82 @@
+import React, { useContext } from "react";
+
+import { Card } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { LanguageContextComoTrabajamos } from "../context/LanguageContextComoTrabajamos";
+
+const CardComoTrabajamos = () => {
+  const { language, translationsCards, setLanguage } = useContext(
+    LanguageContextComoTrabajamos
+  );
+
+  const getTranslation = (key) => {
+    const translationKey = `${key}${language.toUpperCase()}`;
+    const translation = translationsCards[1]
+      ? translationsCards[1][translationKey]
+      : "";
+
+    return translation;
+  };
+
+  const transformTextToList = (text) => {
+    return text.split(".").map((item) => item.trim());
+  };
+
+  // Datos de las cartas con imágenes
+  const cartasData = [
+    {
+      titulo: getTranslation("tituloCard1"),
+      puntos: transformTextToList(getTranslation("puntosCard1")),
+    },
+    {
+      titulo: getTranslation("tituloCard2"),
+      puntos: transformTextToList(getTranslation("puntosCard2")),
+    },
+    {
+      titulo: getTranslation("tituloCard3"),
+      puntos: transformTextToList(getTranslation("puntosCard3")),
+    },
+  ];
+
+  return (
+    <div>
+      <div className="container animate__animated animate__fadeInUp">
+        <section className="row">
+          {cartasData.map((carta, index) => (
+            <div key={index} className="col-lg-12 mb-4">
+              <Card className="border border-danger rounded-3 cartas-planes">
+                <Card.Body>
+                  <Card.Title className="montserrat-bold">
+                    {carta.titulo}
+                  </Card.Title>
+                  <ul className="list-unstyled">
+                    {carta.puntos.map((punto, idx) => (
+                      <li
+                        key={idx}
+                        className={
+                          idx === 0
+                            ? "pt-2 montserrat-regular"
+                            : "py-4 montserrat-regular"
+                        }
+                      >
+                        <FontAwesomeIcon
+                          icon={faCheck}
+                          className="me-2"
+                          style={{ color: "#8E9092" }}
+                        />
+                        <strong className="montserrat-bold">{punto}</strong>{" "}
+                      </li>
+                    ))}
+                  </ul>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
+        </section>
+      </div>
+    </div>
+  );
+};
+
+export default CardComoTrabajamos;
