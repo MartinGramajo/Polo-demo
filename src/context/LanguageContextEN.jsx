@@ -2,10 +2,10 @@ import React, { createContext, useState, useEffect } from "react";
 import axios from "axios";
 import Papa from "papaparse";
 
-export const LanguageContext = createContext();
+export const LanguageContextEN = createContext();
 
-const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState("es"); // idioma por defecto, 'es' para español
+const LanguageENProvider = ({ children }) => {
+  const [language, setLanguage] = useState("en"); // idioma por defecto, 'es' para español
   const [translations, setTranslations] = useState({});
 
   useEffect(() => {
@@ -29,13 +29,13 @@ const LanguageProvider = ({ children }) => {
   }, []);
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, translations }}>
+    <LanguageContextEN.Provider value={{ language, setLanguage, translations }}>
       {children}
-    </LanguageContext.Provider>
+    </LanguageContextEN.Provider>
   );
 };
 
-export default LanguageProvider;
+export default LanguageENProvider;
 // import React, { createContext, useState, useEffect, useContext } from "react";
 // import axios from "axios";
 // import Papa from "papaparse";
