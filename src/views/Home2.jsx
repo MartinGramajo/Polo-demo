@@ -12,6 +12,7 @@ import CalendlyWidget from "../components/CalendlyWidget";
 import { LanguageContext } from "../context/LanguageContext";
 import NavReact from "../components/common/NavReact";
 import Footer from "../components/common/Footer";
+import NavReactBiografia from "../components/common/NavReactBiografia";
 
 const Home2 = () => {
   const { language, translations, setLanguage } = useContext(LanguageContext);
