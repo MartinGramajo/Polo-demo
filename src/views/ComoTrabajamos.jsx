@@ -12,7 +12,6 @@ const ComoTrabajamos = () => {
   };
 
   const { language, translations } = useContext(LanguageContextComoTrabajamos);
-  console.log("ComoTrabajamos ~ translations:", translations);
 
   const getTranslation = (key) => {
     const translationKey = `${key}${language.toUpperCase()}`;

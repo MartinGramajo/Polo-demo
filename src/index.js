@@ -9,6 +9,7 @@ import LanguageServiceProvider from './context/LanguageContextService';
 import LanguageContactProvider from './context/LanguageContextContact';
 import { LanguageSupProvider } from './context/LanguageSupContext';
 import LanguageComoTrabajamosProvider from './context/LanguageContextComoTrabajamos';
+import LanguageBiografiaProvider from './context/LanguageContextBiografia';
 
 
 
@@ -17,13 +18,15 @@ root.render(
   <React.StrictMode>
     <LanguageSupProvider>
       <LanguageContactProvider>
-        <LanguageComoTrabajamosProvider>
-          <LanguageServiceProvider>
-            <LanguageProvider>
-              <App />
-            </LanguageProvider>
-          </LanguageServiceProvider>
-        </LanguageComoTrabajamosProvider>
+        <LanguageBiografiaProvider>
+          <LanguageComoTrabajamosProvider>
+            <LanguageServiceProvider>
+              <LanguageProvider>
+                <App />
+              </LanguageProvider>
+            </LanguageServiceProvider>
+          </LanguageComoTrabajamosProvider>
+        </LanguageBiografiaProvider>
       </LanguageContactProvider>
     </LanguageSupProvider>
   </React.StrictMode>

@@ -895,3 +895,7 @@ body {
   background-color: transparent !important;
   border: none !important;
 }
+
+.icono-back {
+  width: 20px !important;
+}

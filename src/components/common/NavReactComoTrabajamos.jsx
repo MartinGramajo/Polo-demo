@@ -127,7 +127,7 @@ const NavReactComoTrabajamos = () => {
             </Nav>
             <div>
               <Button
-                className="btn-banderas"
+                className="mx-2 btn-banderas"
                 onClick={() => handleLanguageChange("es")}
               >
                 <Image src={es} alt="logo 1" className="tamaño-logo" fluid />

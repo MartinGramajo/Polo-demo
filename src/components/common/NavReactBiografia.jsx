@@ -12,9 +12,9 @@ import logoNuevo from "../../assets/img/logo.png";
 import es from "../../assets/es.png";
 import en from "../../assets/en.png";
 import fr from "../../assets/fr.png";
-import { LanguageContextService } from "../../context/LanguageContextService";
+import { LanguageContextBiografia } from "../../context/LanguageContextBiografia";
 
-const NavReactService = () => {
+const NavReactBiografia = () => {
   function cerrar() {
     let navbar = document.querySelector(".navbar-toggler");
     navbar.click();
@@ -35,7 +35,7 @@ const NavReactService = () => {
     window.location.href = "#/contacto"; // Redirecciona a la página de contacto
   };
 
-  const { language, setLanguage } = useContext(LanguageContextService);
+  const { language, setLanguage } = useContext(LanguageContextBiografia);
 
   const handleLanguageChange = (lang) => {
     setLanguage(lang);
@@ -151,4 +151,4 @@ const NavReactService = () => {
   );
 };
 
-export default NavReactService;
+export default NavReactBiografia;
