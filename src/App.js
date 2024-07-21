@@ -27,7 +27,6 @@ function App() {
     <div className="d-flex flex-column min-vh-100 " id="top">
       <HashRouter>
         <ScrollToTop />
-
         <Routes>
           <Route exact path="/" element={<Home2 />} />
           <Route exact path="/home-en" element={<Home2EN />} />

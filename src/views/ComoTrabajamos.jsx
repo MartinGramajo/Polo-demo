@@ -4,8 +4,8 @@ import ImageTextMobileComponent2 from "../components/ImageTextMobileComponente2"
 import { LanguageContextComoTrabajamos } from "../context/LanguageContextComoTrabajamos";
 import { useContext } from "react";
 import CardComoTrabajamos from "../components/CardComoTrabajamos";
-import FooterComoTrabajamos from "../components/common/FooterComoTrabajamos";
 import NavReactES from "../components/common/NavReactES";
+import Footer from "../components/common/Footer";
 
 const ComoTrabajamos = () => {
   const handleContactClick = () => {
@@ -59,7 +59,7 @@ const ComoTrabajamos = () => {
           </div>
         </div>
       </div>
-      <FooterComoTrabajamos />
+      <Footer />
     </section>
   );
 };

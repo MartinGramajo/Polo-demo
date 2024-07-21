@@ -6,6 +6,7 @@ import ImageTextComponent2FR from "../components/ImageTextComponent2FR";
 import ImageTextMobileComponent2FR from "../components/ImageTextMobileComponenteFR";
 import CardComoTrabajamosFR from "../components/CardComoTrabajamosFR";
 import NavReactFR from "../components/common/NavReactFR";
+import FooterFR from "../components/common/FooterFR";
 
 const ComoTrabajamosFR = () => {
   const handleContactClick = () => {
@@ -80,6 +81,7 @@ const ComoTrabajamosFR = () => {
           </div>
         </div>
       </div>
+      <FooterFR />
     </section>
   );
 };

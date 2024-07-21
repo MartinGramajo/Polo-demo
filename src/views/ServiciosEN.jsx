@@ -4,6 +4,7 @@ import axios from "axios";
 import Papa from "papaparse";
 import CardServiciosEN from "../components/CardServiciosEN";
 import NavReactEN from "../components/common/NavReactEN";
+import FooterEN from "../components/common/FooterEN";
 
 const ServiciosEN = () => {
   const handleContactClick = () => {
@@ -94,6 +95,9 @@ const ServiciosEN = () => {
           </div>
         </section>
       </article>
+      <div className="mt-auto">
+        <FooterEN />
+      </div>
     </div>
   );
 };

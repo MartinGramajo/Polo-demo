@@ -3,13 +3,13 @@ import "animate.css";
 import BannerHome2Texto from "../components/BannerHome2Texto";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Modal } from "react-bootstrap";
-import ContactoForm from "../components/ContactoForm";
 import CalendlyWidget from "../components/CalendlyWidget";
-import Footer from "../components/common/Footer";
 import axios from "axios";
 import Papa from "papaparse";
 import PregFrecuentesEN from "../components/PreguntasFrecuentasEN";
 import NavReactEN from "../components/common/NavReactEN";
+import FooterEN from "../components/common/FooterEN";
+import ContactoFormEN from "../components/ContactoFormEN";
 
 const Home2EN = () => {
   const [language, setLanguage] = useState("en"); // idioma por defecto, 'es' para español
@@ -107,23 +107,25 @@ const Home2EN = () => {
       <Modal show={showPopup} onHide={handleClose} animation={false}>
         <Modal.Header closeButton>
           <Modal.Title style={{ fontWeight: "bold" }}>
-            ¡Suscribite hoy!
+            ¡Subscribe today!
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p>
-            ¡Suscribite hoy y obtené un 10% de descuento en la contratación de
-            tu primer plan de Polo Salud!
+            ¡Sign up today and get a 10% discount on the contracting of your
+            first your first Polo Salud plan!
           </p>
           <ul>
-            <li>Válido para el plan Polo Salud</li>
-            <li>No acumulable con otros descuentos</li>
+            <li>Valid for the Polo Salud plan</li>
+            <li>Not cumulative with other discounts</li>
           </ul>
-          <p>¡Inscribite ahora y aprovechá este beneficio exclusivo!</p>
-          <ContactoForm />
+          <p>¡Register now and take advantage of this exclusive benefit!</p>
+          <ContactoFormEN />
         </Modal.Body>
       </Modal>
-      <Footer />
+      <div className="mt-auto">
+        <FooterEN />
+      </div>
     </div>
   );
 };

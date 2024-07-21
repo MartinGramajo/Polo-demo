@@ -6,6 +6,7 @@ import CardComoTrabajamosEN from "../components/CardComoTrabajamosEN";
 import axios from "axios";
 import Papa from "papaparse";
 import NavReactEN from "../components/common/NavReactEN";
+import FooterEN from "../components/common/FooterEN";
 const ComoTrabajamosEN = () => {
   const handleContactClick = () => {
     window.location.href = "#/contacto";
@@ -78,6 +79,9 @@ const ComoTrabajamosEN = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mt-auto">
+        <FooterEN />
       </div>
     </section>
   );

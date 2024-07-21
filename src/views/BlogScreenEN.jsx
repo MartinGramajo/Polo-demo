@@ -1,6 +1,7 @@
 import React from "react";
 import TablaExcelEN from "../components/TablaExcelEN";
 import NavReactEN from "../components/common/NavReactEN";
+import FooterEN from "../components/common/FooterEN";
 
 const BlogScreenEN = () => {
   return (
@@ -8,6 +9,9 @@ const BlogScreenEN = () => {
       <NavReactEN />
       <div className="py-5">
         <TablaExcelEN />;
+      </div>
+      <div className="mt-auto">
+        <FooterEN />
       </div>
     </section>
   );

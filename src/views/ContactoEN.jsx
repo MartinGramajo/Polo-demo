@@ -3,6 +3,7 @@ import bannerServicios from "../assets/img/slider10.png";
 import bannerServiciosCuadrada from "../assets/img/slider10.png";
 import ContactoContenidoEN from "../components/ContactoContenidoEN";
 import NavReactEN from "../components/common/NavReactEN";
+import FooterEN from "../components/common/FooterEN";
 
 const ContactoEN = () => {
   return (
@@ -25,6 +26,9 @@ const ContactoEN = () => {
         </div>
       </>
       <ContactoContenidoEN />
+      <div className="mt-auto">
+        <FooterEN />
+      </div>
     </div>
   );
 };

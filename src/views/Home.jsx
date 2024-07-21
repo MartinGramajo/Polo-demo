@@ -1,6 +1,7 @@
 import BioComponent from "../components/BioComponent";
 import BioComponentMobile from "../components/BioComponentMobile";
 import CarouselComponent from "../components/CarouselComponent";
+import Footer from "../components/common/Footer";
 import ImageTextComponent from "../components/ImageTextComponent";
 import ImageTextComponent2 from "../components/ImageTextComponent2";
 import ImageTextComponent3 from "../components/ImageTextComponent3";
@@ -75,6 +76,7 @@ const Home = () => {
           <ImageTextMobileComponent3 />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

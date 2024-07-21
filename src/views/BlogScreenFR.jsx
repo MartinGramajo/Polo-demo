@@ -1,6 +1,7 @@
 import React from "react";
 import TablaExcelFR from "../components/TablaExcelFR";
 import NavReactFR from "../components/common/NavReactFR";
+import FooterFR from "../components/common/FooterFR";
 
 const BlogScreenFR = () => {
   return (
@@ -9,6 +10,7 @@ const BlogScreenFR = () => {
       <div className="py-5">
         <TablaExcelFR />;
       </div>
+      <FooterFR />
     </section>
   );
 };

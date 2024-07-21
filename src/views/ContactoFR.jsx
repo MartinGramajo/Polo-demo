@@ -4,6 +4,7 @@ import bannerServiciosCuadrada from "../assets/img/slider10.png";
 
 import ContactoContenidoFR from "../components/ContactoContenidoFR";
 import NavReactFR from "../components/common/NavReactFR";
+import FooterFR from "../components/common/FooterFR";
 
 const ContactoFR = () => {
   return (
@@ -26,6 +27,7 @@ const ContactoFR = () => {
         </div>
       </>
       <ContactoContenidoFR />
+      <FooterFR />
     </div>
   );
 };

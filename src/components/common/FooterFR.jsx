@@ -7,7 +7,7 @@ import wsp from "../../assets/img/wasa.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
-export default function Footer() {
+export default function FooterFR() {
   return (
     <div className=" text-white bg-dark text-white mt-auto  ">
       <div className="px-4 pt-4 container">
@@ -84,47 +84,47 @@ export default function Footer() {
           <div className="col-12 col-lg-4  text-center   mb-1 mt-3 p-1 ">
             <Nav className=" mt-sm-0  flex-column  ">
               <Nav.Link
-                to="/"
+                to="/home-fr"
                 as={NavLink}
                 className="text-white mx-xl-2 my-auto nav-links"
               >
                 HOME
               </Nav.Link>
               <Nav.Link
-                to="/servicios"
+                to="/services-fr"
                 as={NavLink}
                 className=" text-white mx-xl-2 my-auto nav-links"
               >
-                SERVICIOS
+                SERVICES
               </Nav.Link>
               <Nav.Link
-                to="/como-trabajamos"
+                to="/comment-nous-travaillons"
                 as={NavLink}
                 className=" text-white mx-xl-2 my-auto nav-links"
               >
-                COMO TRABAJAMOS
+                COMMENT NOUS TRAVAILLONS
               </Nav.Link>
               <Nav.Link
-                to="/quien/soy"
+                to="/a/propos/de/nous"
                 as={NavLink}
                 className=" text-white mx-xl-2 my-auto nav-links"
               >
-                QUIENES SOMOS
+                A PROPOS DE NOUS
               </Nav.Link>
 
               <Nav.Link
-                to="/blog"
+                to="/blog-fr"
                 as={NavLink}
                 className=" text-white mx-xl-2 my-auto nav-links"
               >
                 BLOG
               </Nav.Link>
               <Nav.Link
-                to="/contacto"
+                to="/contact-fr"
                 as={NavLink}
                 className="text-white mx-xl-2 my-auto nav-links"
               >
-                CONTACTO
+                CONTACT
               </Nav.Link>
             </Nav>
           </div>
@@ -139,9 +139,9 @@ export default function Footer() {
             rel="noreferrer"
           >
             <span>
-              Produced by DKZ Studio &copy; {new Date().getFullYear()}
+              Produit par DKZ Studio &copy; {new Date().getFullYear()}
             </span>
-            <span> Todos los derechos reservados</span>
+            <span> Tous droits réservés</span>
           </a>
         </div>
       </div>

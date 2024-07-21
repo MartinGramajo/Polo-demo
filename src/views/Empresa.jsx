@@ -2,6 +2,7 @@ import BannerEmpresa from "../components/BannerEmpresa";
 import BiografiaContenido from "../components/BiografiaContenido";
 import "animate.css";
 import NavReactES from "../components/common/NavReactES";
+import Footer from "../components/common/Footer";
 const Empresa = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const Empresa = () => {
       <div className="py-4">
         <BiografiaContenido />
       </div>
+      <Footer />
     </div>
   );
 };

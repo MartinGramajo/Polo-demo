@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import BannerServicios from "../components/BannerServicios";
 import { LanguageContextService } from "../context/LanguageContextService";
 import CardServicios from "../components/CardServicios";
-import FooterServicios from "../components/common/FooterServicios";
 import NavReactES from "../components/common/NavReactES";
+import Footer from "../components/common/Footer";
 
 const Servicios = () => {
   const handleContactClick = () => {
@@ -73,7 +73,7 @@ const Servicios = () => {
           </div>
         </section>
       </article>
-      <FooterServicios />
+      <Footer />
     </div>
   );
 };

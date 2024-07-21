@@ -10,6 +10,8 @@ import Papa from "papaparse";
 import axios from "axios";
 import PregFrecuentesFR from "../components/PreguntasFrecuentesFR";
 import NavReactFR from "../components/common/NavReactFR";
+import FooterFR from "../components/common/FooterFR";
+import ContactoFormFR from "../components/ContactoFormFR";
 
 const Home2FR = () => {
   const [language, setLanguage] = useState("fr"); // idioma por defecto, 'es' para español
@@ -105,23 +107,25 @@ const Home2FR = () => {
       <Modal show={showPopup} onHide={handleClose} animation={false}>
         <Modal.Header closeButton>
           <Modal.Title style={{ fontWeight: "bold" }}>
-            ¡Suscribite hoy!
+            ¡Abonnez-vous dès aujourd'hui!
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p>
-            ¡Suscribite hoy y obtené un 10% de descuento en la contratación de
-            tu primer plan de Polo Salud!
+            ¡Inscrivez-vous aujourd'hui et obtenez une réduction de 10% sur
+            votre premier plan Polo Salud. votre premier plan Polo Salud!
           </p>
           <ul>
-            <li>Válido para el plan Polo Salud</li>
-            <li>No acumulable con otros descuentos</li>
+            <li>Valable pour le plan Polo Salud</li>
+            <li>Non cumulable avec d'autres réductions</li>
           </ul>
-          <p>¡Inscribite ahora y aprovechá este beneficio exclusivo!</p>
-          <ContactoForm />
+          <p>
+            ¡Inscrivez-vous maintenant et profitez de cet avantage exclusif!
+          </p>
+          <ContactoFormFR />
         </Modal.Body>
       </Modal>
-      <Footer />
+      <FooterFR />
     </div>
   );
 };

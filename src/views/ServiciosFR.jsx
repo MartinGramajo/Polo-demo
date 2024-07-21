@@ -4,6 +4,7 @@ import axios from "axios";
 import Papa from "papaparse";
 import CardServiciosFR from "../components/CardServiciosFR";
 import NavReactFR from "../components/common/NavReactFR";
+import FooterFR from "../components/common/FooterFR";
 
 const ServiciosFR = () => {
   const handleContactClick = () => {
@@ -94,6 +95,7 @@ const ServiciosFR = () => {
           </div>
         </section>
       </article>
+      <FooterFR />
     </div>
   );
 };
