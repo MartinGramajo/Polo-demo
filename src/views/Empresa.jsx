@@ -1,12 +1,11 @@
 import BannerEmpresa from "../components/BannerEmpresa";
 import BiografiaContenido from "../components/BiografiaContenido";
 import "animate.css";
-import NavReactBiografia from "../components/common/NavReactBiografia";
-import FooterBlog from "../components/common/FooterBlog";
-import FooterBiografia from "../components/common/FooterBiografia";
+import NavReactES from "../components/common/NavReactES";
 const Empresa = () => {
   return (
     <div>
+      <NavReactES />
       <BannerEmpresa />
       <div className="py-4">
         <BiografiaContenido />

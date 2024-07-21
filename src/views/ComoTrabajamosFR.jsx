@@ -1,19 +1,11 @@
 import "animate.css";
-import ImageTextComponent2 from "../components/ImageTextComponent2";
-import ImageTextMobileComponent2 from "../components/ImageTextMobileComponente2";
-import { LanguageContextComoTrabajamos } from "../context/LanguageContextComoTrabajamos";
-import { useContext, useEffect, useState } from "react";
-import NavReactComoTrabajamos from "../components/common/NavReactComoTrabajamos";
-import CardComoTrabajamos from "../components/CardComoTrabajamos";
-import FooterComoTrabajamos from "../components/common/FooterComoTrabajamos";
-import ImageTextComponent2EN from "../components/ImageTextComponent2EN";
-import ImageTextMobileComponent2EN from "../components/ImageTextMobileComponent2EN";
-import CardComoTrabajamosEN from "../components/CardComoTrabajamosEN";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import Papa from "papaparse";
 import ImageTextComponent2FR from "../components/ImageTextComponent2FR";
 import ImageTextMobileComponent2FR from "../components/ImageTextMobileComponenteFR";
 import CardComoTrabajamosFR from "../components/CardComoTrabajamosFR";
+import NavReactFR from "../components/common/NavReactFR";
 
 const ComoTrabajamosFR = () => {
   const handleContactClick = () => {
@@ -51,6 +43,7 @@ const ComoTrabajamosFR = () => {
 
   return (
     <section className="d-flex flex-column min-vh-100 ">
+      <NavReactFR />
       <div className="container">
         <div
           className="d-none d-lg-block animate__animated   animate__fadeIn"

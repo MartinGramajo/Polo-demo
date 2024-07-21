@@ -1,16 +1,11 @@
 import "animate.css";
-import ImageTextComponent2 from "../components/ImageTextComponent2";
-import ImageTextMobileComponent2 from "../components/ImageTextMobileComponente2";
-import { LanguageContextComoTrabajamos } from "../context/LanguageContextComoTrabajamos";
-import { useContext, useEffect, useState } from "react";
-import NavReactComoTrabajamos from "../components/common/NavReactComoTrabajamos";
-import CardComoTrabajamos from "../components/CardComoTrabajamos";
-import FooterComoTrabajamos from "../components/common/FooterComoTrabajamos";
+import { useEffect, useState } from "react";
 import ImageTextComponent2EN from "../components/ImageTextComponent2EN";
 import ImageTextMobileComponent2EN from "../components/ImageTextMobileComponent2EN";
 import CardComoTrabajamosEN from "../components/CardComoTrabajamosEN";
 import axios from "axios";
 import Papa from "papaparse";
+import NavReactEN from "../components/common/NavReactEN";
 const ComoTrabajamosEN = () => {
   const handleContactClick = () => {
     window.location.href = "#/contacto";
@@ -47,6 +42,7 @@ const ComoTrabajamosEN = () => {
 
   return (
     <section className="d-flex flex-column min-vh-100 ">
+      <NavReactEN />
       <div className="container">
         <div
           className="d-none d-lg-block animate__animated   animate__fadeIn"

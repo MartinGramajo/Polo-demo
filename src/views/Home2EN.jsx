@@ -5,11 +5,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Modal } from "react-bootstrap";
 import ContactoForm from "../components/ContactoForm";
 import CalendlyWidget from "../components/CalendlyWidget";
-import NavReact from "../components/common/NavReact";
 import Footer from "../components/common/Footer";
 import axios from "axios";
 import Papa from "papaparse";
 import PregFrecuentesEN from "../components/PreguntasFrecuentasEN";
+import NavReactEN from "../components/common/NavReactEN";
 
 const Home2EN = () => {
   const [language, setLanguage] = useState("en"); // idioma por defecto, 'es' para español
@@ -70,7 +70,7 @@ const Home2EN = () => {
 
   return (
     <div className="d-flex flex-column min-vh-100 ">
-      <NavReact />
+      <NavReactEN />
       <BannerHome2Texto />
       <article className="pt-4 container d-none d-lg-block py-5">
         <h6 className="montserrat-regular" style={{ fontSize: "20px" }}>

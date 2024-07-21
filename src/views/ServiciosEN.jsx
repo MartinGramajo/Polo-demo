@@ -1,12 +1,9 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import BannerServicios from "../components/BannerServicios";
-import { LanguageContextService } from "../context/LanguageContextService";
-import CardServicios from "../components/CardServicios";
-import NavReactService from "../components/common/NavReactService";
-import FooterServicios from "../components/common/FooterServicios";
 import axios from "axios";
 import Papa from "papaparse";
 import CardServiciosEN from "../components/CardServiciosEN";
+import NavReactEN from "../components/common/NavReactEN";
 
 const ServiciosEN = () => {
   const handleContactClick = () => {
@@ -48,7 +45,7 @@ const ServiciosEN = () => {
 
   return (
     <div className="d-flex flex-column min-vh-100 ">
-      <NavReactService />
+      <NavReactEN />
       <BannerServicios />
       <article className="py-4" style={{ textAlign: "start" }}>
         <div className="pt-4 container">

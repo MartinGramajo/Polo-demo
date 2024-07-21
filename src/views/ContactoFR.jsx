@@ -3,10 +3,12 @@ import bannerServicios from "../assets/img/slider10.png";
 import bannerServiciosCuadrada from "../assets/img/slider10.png";
 
 import ContactoContenidoFR from "../components/ContactoContenidoFR";
+import NavReactFR from "../components/common/NavReactFR";
 
 const ContactoFR = () => {
   return (
     <div>
+      <NavReactFR />
       <>
         <div className="bannerContainer d-none d-md-block">
           <Image

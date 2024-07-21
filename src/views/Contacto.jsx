@@ -4,19 +4,17 @@ import bannerServicios from "../assets/img/slider10.png";
 import bannerServiciosCuadrada from "../assets/img/slider10.png";
 import { LanguageContextContact } from "../context/LanguageContextContact";
 import { useContext } from "react";
-import NavReactContacto from "../components/common/NavReactContacto";
 import FooterContacto from "../components/common/FooterContacto";
+import NavReactES from "../components/common/NavReactES";
 
 const Contacto = () => {
   const { language, translations, setLanguage } = useContext(
     LanguageContextContact
   );
 
-  console.log("Servicios ~ translations:", translations);
-
   return (
     <div>
-      <NavReactContacto />
+      <NavReactES />
       <>
         <div className="bannerContainer d-none d-md-block">
           <Image

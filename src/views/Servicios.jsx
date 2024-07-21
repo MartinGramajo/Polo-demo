@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import BannerServicios from "../components/BannerServicios";
 import { LanguageContextService } from "../context/LanguageContextService";
 import CardServicios from "../components/CardServicios";
-import NavReactService from "../components/common/NavReactService";
 import FooterServicios from "../components/common/FooterServicios";
+import NavReactES from "../components/common/NavReactES";
 
 const Servicios = () => {
   const handleContactClick = () => {
@@ -24,7 +24,7 @@ const Servicios = () => {
 
   return (
     <div className="d-flex flex-column min-vh-100 ">
-      <NavReactService />
+      <NavReactES />
       <BannerServicios />
       <article className="py-4" style={{ textAlign: "start" }}>
         <div className="pt-4 container">

@@ -1,18 +1,14 @@
 import React from "react";
-import NavReactBlog from "../components/common/NavReactBlog";
-
 import TablaExcelEN from "../components/TablaExcelEN";
-
-import FooterBlog from "../components/common/FooterBlog";
+import NavReactEN from "../components/common/NavReactEN";
 
 const BlogScreenEN = () => {
   return (
     <section className="d-flex flex-column min-vh-100 ">
-      <NavReactBlog />
+      <NavReactEN />
       <div className="py-5">
         <TablaExcelEN />;
       </div>
-      <FooterBlog />
     </section>
   );
 };

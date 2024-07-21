@@ -7,8 +7,8 @@ import ContactoForm from "../components/ContactoForm";
 import PregFrecuentes from "../components/PregFrecuentes";
 import CalendlyWidget from "../components/CalendlyWidget";
 import { LanguageContext } from "../context/LanguageContext";
-import NavReact from "../components/common/NavReact";
 import Footer from "../components/common/Footer";
+import NavReactES from "../components/common/NavReactES";
 
 const Home2 = () => {
   const { language, translations, setLanguage } = useContext(LanguageContext);
@@ -48,7 +48,7 @@ const Home2 = () => {
 
   return (
     <div className="d-flex flex-column min-vh-100 ">
-      <NavReact />
+      <NavReactES />
       <BannerHome2Texto />
       <article className="pt-4 container d-none d-lg-block py-5">
         <h6 className="montserrat-regular" style={{ fontSize: "20px" }}>

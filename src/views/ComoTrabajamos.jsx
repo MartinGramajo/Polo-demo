@@ -3,9 +3,9 @@ import ImageTextComponent2 from "../components/ImageTextComponent2";
 import ImageTextMobileComponent2 from "../components/ImageTextMobileComponente2";
 import { LanguageContextComoTrabajamos } from "../context/LanguageContextComoTrabajamos";
 import { useContext } from "react";
-import NavReactComoTrabajamos from "../components/common/NavReactComoTrabajamos";
 import CardComoTrabajamos from "../components/CardComoTrabajamos";
 import FooterComoTrabajamos from "../components/common/FooterComoTrabajamos";
+import NavReactES from "../components/common/NavReactES";
 
 const ComoTrabajamos = () => {
   const handleContactClick = () => {
@@ -22,7 +22,7 @@ const ComoTrabajamos = () => {
 
   return (
     <section className="d-flex flex-column min-vh-100 ">
-      <NavReactComoTrabajamos />
+      <NavReactES />
       <div className="container">
         <div
           className="d-none d-lg-block animate__animated   animate__fadeIn"
