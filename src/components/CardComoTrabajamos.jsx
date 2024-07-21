@@ -6,7 +6,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { LanguageContextComoTrabajamos } from "../context/LanguageContextComoTrabajamos";
 
 const CardComoTrabajamos = () => {
-  const { language, translationsCards, setLanguage } = useContext(
+  const { language, translationsCards } = useContext(
     LanguageContextComoTrabajamos
   );
 

@@ -1,13 +1,4 @@
 import React, { useContext } from "react";
-import { Card } from "react-bootstrap"; // Asumiendo que estás usando react-bootstrap
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
-
-// import imagenKinesio from "../assets/img/kinesio.jpg"; // Importa tus imágenes aquí
-// import imagenTermografica from "../assets/img/termo.png";
-// import imagenTerapiaManual from "../assets/img/terapiaManual.jpg";
-// import imagenOsteopatia from "../assets/img/osteopatia.jpg";
-// import imagenAnalisis from "../assets/img/analisis.jpg";
 import BannerServicios from "../components/BannerServicios";
 import { LanguageContextService } from "../context/LanguageContextService";
 import CardServicios from "../components/CardServicios";
@@ -22,53 +13,7 @@ const Servicios = () => {
     window.location.href = "#/como-trabajamos";
   };
 
-  // Datos de las cartas con imágenes
-  // const cartasData = [
-  //   {
-  //     titulo: "Kinesio tapping",
-  //     imgSrc: imagenKinesio,
-  //     puntos: [
-  //       "Trabaja la función muscular",
-  //       "Activa el sistema analgésico endógeno y previene lesiones en articulaciones estresadas",
-  //     ],
-  //   },
-  //   {
-  //     titulo: "Monitoreo con cámara termográfica",
-  //     imgSrc: imagenTermografica,
-  //     puntos: [
-  //       "Las imágenes térmicas muestran con diferentes colores sitios de inflamación",
-  //       "Las usamos para diagnosticar precozmente lesiones, sobre todo en tendones, ligamentos y dorso y evaluar su evolución",
-  //     ],
-  //   },
-  //   {
-  //     titulo: "Terapia manual",
-  //     imgSrc: imagenTerapiaManual,
-  //     puntos: [
-  //       "Trabaja los tejidos blandos con técnicas manuales de masaje",
-  //       "Favorece la circulación y restablece la fatiga muscular",
-  //     ],
-  //   },
-  //   {
-  //     titulo: "Osteopatía",
-  //     imgSrc: imagenOsteopatia,
-  //     puntos: [
-  //       "Trabaja las restricciones de movilidad articular y/o miofascial",
-  //       "Reestablece la fisiología y funcionalidad corporal disminuyendo la nocicepción",
-  //     ],
-  //   },
-  //   {
-  //     titulo: "Anáisis biomecánico de los jugadores",
-  //     imgSrc: imagenAnalisis,
-  //     puntos: [
-  //       " Evaluación funcional de la movilidad músculo esquelética del jugado",
-  //       " Sedeterminará el impacto que tiene el cuerpo del jugador sobre la estructura anatómica del caballo",
-  //     ],
-  //   },
-  // ];
-
-  const { language, translations, setLanguage } = useContext(
-    LanguageContextService
-  );
+  const { language, translations } = useContext(LanguageContextService);
 
   const getTranslation = (key) => {
     const translationKey = `${key}${language.toUpperCase()}`;
