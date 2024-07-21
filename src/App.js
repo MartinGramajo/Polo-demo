@@ -17,6 +17,8 @@ import Home2EN from "./views/Home2EN";
 import Home2FR from "./views/Home2FR";
 import ServiciosEN from "./views/ServiciosEN";
 import ServiciosFR from "./views/ServiciosFR";
+import ComoTrabajamosEN from "./views/ComoTrabajamosEN";
+import ComoTrabajamosFR from "./views/ComoTrabajamosFR";
 
 
 function App() {
@@ -32,11 +34,13 @@ function App() {
           <Route exact path="/servicios" element={<Servicios />} />
           <Route exact path="/services" element={<ServiciosEN />} />
           <Route exact path="/services-fr" element={<ServiciosFR />} />
+          <Route exact path="/como-trabajamos" element={<ComoTrabajamos />} />
+          <Route exact path="/how-we-work" element={<ComoTrabajamosEN />} />
+          <Route exact path="/comment-nous-travaillons" element={<ComoTrabajamosFR />} />
           <Route exact path="/quien/soy" element={<Empresa />} />
           <Route exact path="/galeria" element={<Galeria />} />
           <Route exact path="/novedades" element={<Novedades />} />
           <Route exact path="/contacto" element={<Contacto />} />
-          <Route exact path="/como-trabajamos" element={<ComoTrabajamos />} />
           <Route exact path="/blog" element={<BlogScreen />} />
           <Route exact path="/camara" element={<CamaraTermografica />} />
         </Routes>
