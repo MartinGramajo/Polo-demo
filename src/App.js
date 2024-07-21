@@ -3,16 +3,11 @@ import "animate.css/animate.compat.css"
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Contacto from "./views/Contacto";
 import ScrollToTop from "./components/common/ScrollToTop";
-import Galeria from "./views/Galeria";
-import Novedades from "./views/Novedades";
 import Servicios from "./views/Servicios";
 import Empresa from "./views/Empresa";
 import Home2 from "./views/Home2";
 import ComoTrabajamos from "./views/ComoTrabajamos";
-import CamaraTermografica from "./views/CamaraTermografica";
 import BlogScreen from "./views/BlogScreen";
-import NavReact from "./components/common/NavReact";
-import Footer from "./components/common/Footer";
 import Home2EN from "./views/Home2EN";
 import Home2FR from "./views/Home2FR";
 import ServiciosEN from "./views/ServiciosEN";
@@ -21,6 +16,10 @@ import ComoTrabajamosEN from "./views/ComoTrabajamosEN";
 import ComoTrabajamosFR from "./views/ComoTrabajamosFR";
 import EmpresaEN from "./views/EmpresaEN";
 import EmpresaFR from "./views/EmpresaFR";
+import BlogScreenEN from "./views/BlogScreenEN";
+import BlogScreenFR from "./views/BlogScreenFR";
+import ContactoEN from "./views/ContactoEN";
+import ContactoFR from "./views/ContactoFR";
 
 
 function App() {
@@ -42,11 +41,12 @@ function App() {
           <Route exact path="/quien/soy" element={<Empresa />} />
           <Route exact path="/about/us" element={<EmpresaEN />} />
           <Route exact path="/a/propos/de/nous" element={<EmpresaFR />} />
-          <Route exact path="/galeria" element={<Galeria />} />
-          <Route exact path="/novedades" element={<Novedades />} />
-          <Route exact path="/contacto" element={<Contacto />} />
           <Route exact path="/blog" element={<BlogScreen />} />
-          <Route exact path="/camara" element={<CamaraTermografica />} />
+          <Route exact path="/blog-en" element={<BlogScreenEN />} />
+          <Route exact path="/blog-fr" element={<BlogScreenFR />} />
+          <Route exact path="/contacto" element={<Contacto />} />
+          <Route exact path="/contact" element={<ContactoEN />} />
+          <Route exact path="/contact-fr" element={<ContactoFR />} />
         </Routes>
 
       </HashRouter>
