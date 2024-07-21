@@ -5,6 +5,7 @@ import bannerServiciosCuadrada from "../assets/img/slider10.png";
 import { LanguageContextContact } from "../context/LanguageContextContact";
 import { useContext } from "react";
 import NavReactContacto from "../components/common/NavReactContacto";
+import FooterContacto from "../components/common/FooterContacto";
 
 const Contacto = () => {
   const { language, translations, setLanguage } = useContext(
@@ -33,6 +34,7 @@ const Contacto = () => {
         </div>
       </>
       <ContactoContenido />
+      <FooterContacto />
     </div>
   );
 };

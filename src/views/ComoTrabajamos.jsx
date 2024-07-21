@@ -5,6 +5,7 @@ import { LanguageContextComoTrabajamos } from "../context/LanguageContextComoTra
 import { useContext } from "react";
 import NavReactComoTrabajamos from "../components/common/NavReactComoTrabajamos";
 import CardComoTrabajamos from "../components/CardComoTrabajamos";
+import FooterComoTrabajamos from "../components/common/FooterComoTrabajamos";
 
 const ComoTrabajamos = () => {
   const handleContactClick = () => {
@@ -20,7 +21,7 @@ const ComoTrabajamos = () => {
   };
 
   return (
-    <section>
+    <section className="d-flex flex-column min-vh-100 ">
       <NavReactComoTrabajamos />
       <div className="container">
         <div
@@ -58,6 +59,7 @@ const ComoTrabajamos = () => {
           </div>
         </div>
       </div>
+      <FooterComoTrabajamos />
     </section>
   );
 };

@@ -11,6 +11,7 @@ import PregFrecuentes from "../components/PregFrecuentes";
 import CalendlyWidget from "../components/CalendlyWidget";
 import { LanguageContext } from "../context/LanguageContext";
 import NavReact from "../components/common/NavReact";
+import Footer from "../components/common/Footer";
 
 const Home2 = () => {
   const { language, translations, setLanguage } = useContext(LanguageContext);
@@ -88,7 +89,7 @@ const Home2 = () => {
   };
 
   return (
-    <div>
+    <div className="d-flex flex-column min-vh-100 ">
       <NavReact />
       <BannerHome2Texto />
       <article className="pt-4 container d-none d-lg-block py-5">
@@ -142,6 +143,7 @@ const Home2 = () => {
           <ContactoForm />
         </Modal.Body>
       </Modal>
+      <Footer />
     </div>
   );
 };

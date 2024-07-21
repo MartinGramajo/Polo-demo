@@ -203,6 +203,12 @@ body {
   width: 80px;
 }
 
+@media (max-width: 1100px) {
+  .tamaño-logo {
+    width: 120px;
+  }
+}
+
 @media (max-width: 800px) {
   .tamaño-logo {
     width: 80px;
@@ -218,6 +224,17 @@ body {
 @media (max-width: 320px) {
   .tamaño-logo {
     width: 60px;
+  }
+}
+
+.centrado-sin-resp {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+@media (max-width: 1000px) {
+  .centrado-sin-resp {
+    display: block !important;
   }
 }
 

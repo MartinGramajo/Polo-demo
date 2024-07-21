@@ -3,6 +3,7 @@ import BannerServicios from "../components/BannerServicios";
 import { LanguageContextService } from "../context/LanguageContextService";
 import CardServicios from "../components/CardServicios";
 import NavReactService from "../components/common/NavReactService";
+import FooterServicios from "../components/common/FooterServicios";
 
 const Servicios = () => {
   const handleContactClick = () => {
@@ -22,7 +23,7 @@ const Servicios = () => {
   };
 
   return (
-    <div>
+    <div className="d-flex flex-column min-vh-100 ">
       <NavReactService />
       <BannerServicios />
       <article className="py-4" style={{ textAlign: "start" }}>
@@ -72,6 +73,7 @@ const Servicios = () => {
           </div>
         </section>
       </article>
+      <FooterServicios />
     </div>
   );
 };

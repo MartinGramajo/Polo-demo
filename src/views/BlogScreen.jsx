@@ -4,10 +4,10 @@ import { LanguageContextBiografia } from "../context/LanguageContextBiografia";
 import TablaExcelES from "../components/TablaExcelES";
 import TablaExcelEN from "../components/TablaExcelEN";
 import TablaExcelFR from "../components/TablaExcelFR";
+import FooterBlog from "../components/common/FooterBlog";
 
 const BlogScreen = () => {
   const { language, setLanguage } = useContext(LanguageContextBiografia);
-  console.log("BlogScreen ~ language:", language);
 
   const renderBlog = () => {
     if (language === "es") {
@@ -20,9 +20,10 @@ const BlogScreen = () => {
   };
 
   return (
-    <section>
+    <section className="d-flex flex-column min-vh-100 ">
       <NavReactBlog />
       <div className="py-5">{renderBlog()}</div>
+      <FooterBlog />
     </section>
   );
 };

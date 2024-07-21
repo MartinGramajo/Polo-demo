@@ -1,12 +1,5 @@
 import React, { useContext, useState } from "react";
-import {
-  Button,
-  Container,
-  Image,
-  Nav,
-  Navbar,
-  Offcanvas,
-} from "react-bootstrap";
+import { Button, Container, Image, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import logoNuevo from "../../assets/img/logo.png";
 import es from "../../assets/es.png";
@@ -41,6 +34,193 @@ const NavReact = () => {
     setLanguage(lang);
   };
 
+  const renderNav = () => {
+    if (language === "es") {
+      return (
+        <Nav className="d-flex justify-content-center align-items-center">
+          <Nav.Link
+            as={NavLink}
+            to="/"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            HOME
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/servicios"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            SERVICIOS
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/como-trabajamos"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            CÓMO TRABAJAMOS
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto d-none d-lg-block"
+          >
+            <Image src={logoNuevo} alt="logo 1" className="tamaño-logo" fluid />
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/quien/soy"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            QUIENES SOMOS
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/blog"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            BLOG
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/contacto"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            CONTACTO
+          </Nav.Link>
+        </Nav>
+      );
+    } else if (language === "en") {
+      return (
+        <Nav className="d-flex justify-content-center align-items-center">
+          <Nav.Link
+            as={NavLink}
+            to="/"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            HOME
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/servicios"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            SERVICES
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/como-trabajamos"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            HOW WE WORK
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto d-none d-lg-block"
+          >
+            <Image src={logoNuevo} alt="logo 1" className="tamaño-logo" fluid />
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/quien/soy"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            ABOUT US
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/blog"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            BLOG
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/contacto"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            CONTACT
+          </Nav.Link>
+        </Nav>
+      );
+    } else {
+      return (
+        <Nav className="d-flex justify-content-center align-items-center">
+          <Nav.Link
+            as={NavLink}
+            to="/"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            HOME
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/servicios"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            SERVICES
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/como-trabajamos"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            HOW WE WORK
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto d-none d-lg-block"
+          >
+            <Image src={logoNuevo} alt="logo 1" className="tamaño-logo" fluid />
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/quien/soy"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            ABOUT US
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/blog"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            BLOG
+          </Nav.Link>
+          <Nav.Link
+            as={NavLink}
+            to="/contacto"
+            onClick={cerrar}
+            className="tamaño-medium color-blanco mx-2 my-auto"
+          >
+            CONTACT
+          </Nav.Link>
+        </Nav>
+      );
+    }
+  };
+
   return (
     <div>
       <Navbar
@@ -64,69 +244,12 @@ const NavReact = () => {
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ms-auto ms-auto d-flex justify-content-center align-items-center">
-              <Nav.Link
-                as={NavLink}
-                to="/"
-                onClick={cerrar}
-                className="tamaño-medium color-blanco mx-2 my-auto"
-              >
-                INICIO
-              </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="/servicios"
-                onClick={cerrar}
-                className="tamaño-medium color-blanco mx-2 my-auto"
-              >
-                SERVICIOS
-              </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="/como-trabajamos"
-                onClick={cerrar}
-                className="tamaño-medium color-blanco mx-2 my-auto"
-              >
-                CÓMO TRABAJAMOS
-              </Nav.Link>
-              <div className="d-lg-block d-none mx-2">
-                <Navbar.Brand href="/" className="mx-2">
-                  <Image
-                    src={logoNuevo}
-                    alt="logo 2"
-                    className="tamaño-logo"
-                    fluid
-                  />
-                </Navbar.Brand>
-              </div>
-              <Nav.Link
-                as={NavLink}
-                to="/quien/soy"
-                onClick={cerrar}
-                className="tamaño-medium color-blanco mx-2 my-auto"
-              >
-                QUIENES SOMOS
-              </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="/blog"
-                onClick={cerrar}
-                className="tamaño-medium color-blanco mx-2 my-auto"
-              >
-                BLOG
-              </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="/contacto"
-                onClick={cerrar}
-                className="tamaño-medium color-blanco mx-2 my-auto"
-              >
-                CONTACTO
-              </Nav.Link>
-            </Nav>
-            <div>
+            <div className="d-flex flex-grow-1 justify-content-center">
+              {renderNav()}
+            </div>
+            <div className="d-flex justify-content-center mt-2">
               <Button
-                className="btn-banderas"
+                className="mx-2 btn-banderas"
                 onClick={() => handleLanguageChange("es")}
               >
                 <Image src={es} alt="logo 1" className="tamaño-logo" fluid />

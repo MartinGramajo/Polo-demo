@@ -7,10 +7,10 @@ import wsp from "../../assets/img/wasa.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { useContext } from "react";
-import { LanguageContext } from "../../context/LanguageContext";
+import { LanguageContextService } from "../../context/LanguageContextService";
 
-export default function Footer() {
-  const { language, setLanguage } = useContext(LanguageContext);
+export default function FooterServicios() {
+  const { language, setLanguage } = useContext(LanguageContextService);
 
   const handleLanguageChange = (lang) => {
     setLanguage(lang);
