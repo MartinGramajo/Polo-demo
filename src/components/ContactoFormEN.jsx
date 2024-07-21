@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { Col, Form, InputGroup, Row, Button } from "react-bootstrap";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import { useRef } from "react";
 import axios from "axios";

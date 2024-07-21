@@ -1,5 +1,4 @@
 import "animate.css";
-import ContactoForm from "./ContactoForm";
 import axios from "axios";
 import Papa from "papaparse";
 import { useEffect, useState } from "react";
