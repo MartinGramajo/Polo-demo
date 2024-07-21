@@ -12,9 +12,9 @@ import logoNuevo from "../../assets/img/logo.png";
 import es from "../../assets/es.png";
 import en from "../../assets/en.png";
 import fr from "../../assets/fr.png";
-import { LanguageContext } from "../../context/LanguageContext";
+import { LanguageContextBiografia } from "../../context/LanguageContextBiografia";
 
-const NavReact = () => {
+const NavReactBlog = () => {
   function cerrar() {
     let navbar = document.querySelector(".navbar-toggler");
     navbar.click();
@@ -35,7 +35,7 @@ const NavReact = () => {
     window.location.href = "#/contacto"; // Redirecciona a la página de contacto
   };
 
-  const { language, setLanguage } = useContext(LanguageContext);
+  const { language, setLanguage } = useContext(LanguageContextBiografia);
 
   const handleLanguageChange = (lang) => {
     setLanguage(lang);
@@ -113,7 +113,7 @@ const NavReact = () => {
                 onClick={cerrar}
                 className="tamaño-medium color-blanco mx-2 my-auto"
               >
-                BLOG
+                NOTAS
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
@@ -126,7 +126,7 @@ const NavReact = () => {
             </Nav>
             <div>
               <Button
-                className="btn-banderas"
+                className="mx-2 btn-banderas"
                 onClick={() => handleLanguageChange("es")}
               >
                 <Image src={es} alt="logo 1" className="tamaño-logo" fluid />
@@ -151,4 +151,4 @@ const NavReact = () => {
   );
 };
 
-export default NavReact;
+export default NavReactBlog;

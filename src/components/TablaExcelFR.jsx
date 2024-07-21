@@ -3,7 +3,7 @@ import axios from "axios";
 import Papa from "papaparse";
 import { Card, Button, Modal, Row, Col, Spinner, Alert } from "react-bootstrap";
 
-const BlogPage = () => {
+const TablaExcelFR = () => {
   const [blogEntries, setBlogEntries] = useState([]);
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -13,7 +13,7 @@ const BlogPage = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          "https://docs.google.com/spreadsheets/d/e/2PACX-1vS3dibSLzlpVDUXj1iCUC0v5Pce9PBVEwDWFnpIG4SkSHeiIc3euTIATppVN8FhYJFCtLtzNAsnR9jW/pub?output=csv"
+          "https://docs.google.com/spreadsheets/d/e/2PACX-1vQcS4Wksv3VvRxU9sHVly7Kq6fkI9UPVDP0WjwRWtrmsUZtxtA5CUHsMfd48p9_OCbnLA5MyFeVESrW/pub?output=csv"
         );
         const parsedData = Papa.parse(response.data, { header: true }).data;
         setBlogEntries(parsedData);
@@ -35,15 +35,22 @@ const BlogPage = () => {
     setSelectedIndex(null);
   };
 
+  const splitText = (text, delimiter = "\n") => {
+    return text
+      .split(delimiter)
+      .filter((item) => item.trim() !== "")
+      .map((item, index) => <li key={index}>{item}</li>);
+  };
+
   return (
     <div className="blog-page container d-flex flex-wrap">
       {loading ? (
         <Spinner animation="border" role="status" className="mx-auto mt-5">
-          <span className="visually-hidden">Cargando...</span>
+          <span className="visually-hidden">Loading...</span>
         </Spinner>
       ) : blogEntries.length === 0 ? (
         <Alert variant="info" className="mx-auto mt-5">
-          No hay notas cargadas aún.
+          No posts available yet.
         </Alert>
       ) : (
         blogEntries.map((entry, index) => (
@@ -63,13 +70,13 @@ const BlogPage = () => {
                     className="ver-mas-btn-sidebar text-white montserrat-bold"
                     onClick={() => handleOpenDetailModal(index)}
                   >
-                    Ver mas
+                    View More
                   </Button>
                 </Card.Body>
               </Card>
             </Col>
 
-            {/* Modal de detalles */}
+            {/* Detail Modal */}
             <Modal
               className="modal-xl"
               show={index === selectedIndex}
@@ -90,29 +97,17 @@ const BlogPage = () => {
                 </div>
                 <div className="py-2">
                   <h4>{entry.titulo3}</h4>
-                  <ul className="h6">
-                    {entry.descripcionLista.split("\n").map((item, index) => (
-                      <li key={index}>{item}</li>
-                    ))}
-                  </ul>
+                  <ul className="h6">{splitText(entry.descripcionLista)}</ul>
                 </div>
                 <div className="py-2">
                   <h4>{entry.titulolista2}</h4>
                   <h6>{entry.titulolista2descripcion}</h6>
-                  <ol className="h6">
-                    {entry.descripcionlista2.split("\n").map((item, index) => (
-                      <li key={index}>{item}</li>
-                    ))}
-                  </ol>
+                  <ol className="h6">{splitText(entry.descripcionlista2)}</ol>
                 </div>
                 <div className="py-2">
                   <h4>{entry.titulolista3}</h4>
                   <h6>{entry.titulolista3descripcion}</h6>
-                  <ul className="h6">
-                    {entry.descripcionlista3.split("\n").map((item, index) => (
-                      <li key={index}>{item}</li>
-                    ))}
-                  </ul>
+                  <ul className="h6">{splitText(entry.descripcionlista3)}</ul>
                 </div>
                 <div className="py-2">
                   <h4>{entry.titulo5}</h4>
@@ -121,11 +116,7 @@ const BlogPage = () => {
                 <div className="py-2">
                   <h4>{entry.titulolista4}</h4>
                   <h6>{entry.titulolista4descripcion}</h6>
-                  <ul className="h6">
-                    {entry.descripcionlista4.split("\n").map((item, index) => (
-                      <li key={index}>{item}</li>
-                    ))}
-                  </ul>
+                  <ul className="h6">{splitText(entry.descripcionlista4)}</ul>
                 </div>
                 <div className="py-2">
                   <h4>{entry.titulo6}</h4>
@@ -133,16 +124,12 @@ const BlogPage = () => {
                 </div>
                 <div className="py-2">
                   <h4>References</h4>
-                  <ul className="h6">
-                    {entry.referencias.split("\n").map((item, index) => (
-                      <li key={index}>{item}</li>
-                    ))}
-                  </ul>
+                  <ul className="h6">{splitText(entry.referencias)}</ul>
                 </div>
               </Modal.Body>
               <Modal.Footer>
                 <Button variant="secondary" onClick={handleCloseDetailModal}>
-                  Cerrar
+                  Close
                 </Button>
               </Modal.Footer>
             </Modal>
@@ -153,4 +140,4 @@ const BlogPage = () => {
   );
 };
 
-export default BlogPage;
+export default TablaExcelFR;
