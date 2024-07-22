@@ -41,7 +41,7 @@ function MiHistoriaFR() {
   const [open, setOpen] = useState(false);
 
   const handleHomeClick = () => {
-    window.location.href = "/";
+    window.location.href = "#/home-fr";
   };
   console.log("MiHistoria ~ translationsHistoria :", translationsHistoria);
 

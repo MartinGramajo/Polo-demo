@@ -10,7 +10,7 @@ import FooterFR from "../components/common/FooterFR";
 
 const ComoTrabajamosFR = () => {
   const handleContactClick = () => {
-    window.location.href = "#/contacto";
+    window.location.href = "#/contact-fr";
   };
 
   const [language, setLanguage] = useState("fr"); // idioma por defecto, 'es' para español

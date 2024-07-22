@@ -10,6 +10,7 @@ import PregFrecuentesEN from "../components/PreguntasFrecuentasEN";
 import NavReactEN from "../components/common/NavReactEN";
 import FooterEN from "../components/common/FooterEN";
 import ContactoFormEN from "../components/ContactoFormEN";
+import CalendlyWidgetEN from "../components/CalendlyWidgetEN";
 
 const Home2EN = () => {
   const [language, setLanguage] = useState("en"); // idioma por defecto, 'es' para español
@@ -91,14 +92,7 @@ const Home2EN = () => {
         </h6>
       </article>
 
-      <CalendlyWidget />
       <article className="container pt-4">
-        <h6
-          className="montserrat-regular"
-          style={{ fontSize: "22px", fontWeight: "bold" }}
-        >
-          FAQ
-        </h6>
         <div className="pb-5 pt-2">
           <PregFrecuentesEN />
         </div>

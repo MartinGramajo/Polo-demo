@@ -9,7 +9,7 @@ import NavReactEN from "../components/common/NavReactEN";
 import FooterEN from "../components/common/FooterEN";
 const ComoTrabajamosEN = () => {
   const handleContactClick = () => {
-    window.location.href = "#/contacto";
+    window.location.href = "#/contact";
   };
 
   const [language, setLanguage] = useState("en"); // idioma por defecto, 'es' para español

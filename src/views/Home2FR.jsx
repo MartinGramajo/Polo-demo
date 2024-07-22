@@ -94,12 +94,6 @@ const Home2FR = () => {
       </article>
       <CalendlyWidget />
       <article className="container pt-4">
-        <h6
-          className="montserrat-regular"
-          style={{ fontSize: "22px", fontWeight: "bold" }}
-        >
-          FAQ
-        </h6>
         <div className="pb-5 pt-2">
           <PregFrecuentesFR />
         </div>

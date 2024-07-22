@@ -32,16 +32,24 @@ const PregFrecuentesEN = () => {
   };
 
   return (
-    <Accordion>
-      {Object.values(translations).map((item, index) => (
-        <Accordion.Item eventKey={index} key={item.id}>
-          <Accordion.Header>
-            {getTranslation(item, "pregunta")}
-          </Accordion.Header>
-          <Accordion.Body>{getTranslation(item, "respuesta")}</Accordion.Body>
-        </Accordion.Item>
-      ))}
-    </Accordion>
+    <>
+      <h6
+        className="montserrat-regular"
+        style={{ fontSize: "22px", fontWeight: "bold" }}
+      >
+        FAQ
+      </h6>
+      <Accordion>
+        {Object.values(translations).map((item, index) => (
+          <Accordion.Item eventKey={index} key={item.id}>
+            <Accordion.Header>
+              {getTranslation(item, "pregunta")}
+            </Accordion.Header>
+            <Accordion.Body>{getTranslation(item, "respuesta")}</Accordion.Body>
+          </Accordion.Item>
+        ))}
+      </Accordion>
+    </>
   );
 };
 

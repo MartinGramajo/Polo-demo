@@ -8,11 +8,11 @@ import FooterEN from "../components/common/FooterEN";
 
 const ServiciosEN = () => {
   const handleContactClick = () => {
-    window.location.href = "#/contacto";
+    window.location.href = "#/contact";
   };
 
   const handleTrabajamosClick = () => {
-    window.location.href = "#/como-trabajamos";
+    window.location.href = "#/how-we-work";
   };
 
   const [language, setLanguage] = useState("en"); // idioma por defecto, 'es' para español
