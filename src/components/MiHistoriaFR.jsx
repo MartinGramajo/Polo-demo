@@ -108,7 +108,7 @@ function MiHistoriaFR() {
                 onClick={handleHomeClick}
               >
                 <img className="icono-back me-2" src={back} alt="back" />
-                HOME
+                Back
               </button>
             </div>
           </section>

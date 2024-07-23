@@ -102,7 +102,7 @@ function MiHistoria() {
                 {open ? (
                   <>
                     <img className="icono-back me-2" src={back} alt="back" />
-                    HOME
+                    Cerrar
                   </>
                 ) : (
                   getTranslation("botonTexto")
