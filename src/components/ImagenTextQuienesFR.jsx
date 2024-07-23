@@ -43,15 +43,13 @@ const ImagenTextQuienesFR = () => {
       </li>
     ));
   };
+
+  const imagen = getTranslation("imagen");
   return (
     <div className="container">
       <section className="row">
         <div className="col-lg-6 col-12">
-          <Image
-            src={bannerServiciosCuadrado}
-            className="bannerImage"
-            alt="inicio banner"
-          />
+          <Image src={imagen} className="bannerImage" alt="inicio banner" />
         </div>
         <div className="col-lg-6 col-12">
           <h4
