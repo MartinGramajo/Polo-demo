@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import BannerServicios from "../components/BannerServicios";
 import axios from "axios";
 import Papa from "papaparse";
-import CardServiciosEN from "../components/CardServiciosEN";
 import NavReactEN from "../components/common/NavReactEN";
 import FooterEN from "../components/common/FooterEN";
+import CardServiciosDinamicaEN from "../components/CardServiciosDinamicaEN";
 
 const ServiciosEN = () => {
   const handleContactClick = () => {
@@ -66,7 +66,7 @@ const ServiciosEN = () => {
           </h6>
         </article>
         <article>
-          <CardServiciosEN />
+          <CardServiciosDinamicaEN />
         </article>
         <article className="container pb-4 text-center">
           <h6

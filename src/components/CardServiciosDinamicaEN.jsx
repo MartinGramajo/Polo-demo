@@ -1,62 +1,49 @@
-import React, { useContext } from "react";
-import imagenKinesio from "../assets/img/kinesio.jpg"; // Importa tus imágenes aquí
-import imagenTermografica from "../assets/img/termo.png";
-import imagenTerapiaManual from "../assets/img/terapiaManual.jpg";
-import imagenOsteopatia from "../assets/img/osteopatia.jpg";
+import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { LanguageContextService } from "../context/LanguageContextService";
+import axios from "axios";
+import Papa from "papaparse";
 
-const CardServicios = () => {
-  const { language, translationsCards, setLanguage } = useContext(
-    LanguageContextService
-  );
+const CardServiciosDinamicaEN = () => {
+  const [language, setLanguage] = useState("en"); // idioma por defecto, 'es' para español
+  const [translationsCards, setTranslationsCards] = useState({});
 
-  const getTranslation = (key) => {
+  useEffect(() => {
+    const fetchTranslations = async () => {
+      try {
+        const response = await axios.get(
+          "https://docs.google.com/spreadsheets/d/e/2PACX-1vT_Cr5IXpooPdg4wPh0RJ_VzLU8xMr0aiFFRAcTXIELwxY1Fp6hN7nkWKdWl_L32bf2DnjE-sds58_M/pub?output=csv"
+        );
+        const parsedData = Papa.parse(response.data, { header: true }).data;
+        const translationsData = {};
+        parsedData.forEach((row) => {
+          translationsData[row.id] = row;
+        });
+        setTranslationsCards(translationsData);
+      } catch (error) {
+        console.error("Error fetching translations:", error);
+      }
+    };
+
+    fetchTranslations();
+  }, []);
+
+  const getTranslation = (key, row) => {
     const translationKey = `${key}${language.toUpperCase()}`;
-    const translation = translationsCards[1]
-      ? translationsCards[1][translationKey]
-      : "";
-
-    return translation;
+    return row ? row[translationKey] : "";
   };
 
   const transformTextToList = (text) => {
     return text.split(".").map((item) => item.trim());
   };
 
-  // Datos de las cartas con imágenes
-  const cartasData = [
-    {
-      titulo: getTranslation("tituloCard1"),
-      imgSrc: imagenKinesio,
-      puntos: transformTextToList(getTranslation("puntosCard1")),
-    },
-    {
-      titulo: getTranslation("tituloCard2"),
-      imgSrc: imagenTermografica,
-      puntos: transformTextToList(getTranslation("puntosCard2")),
-    },
-    {
-      titulo: getTranslation("tituloCard3"),
-      imgSrc: imagenTerapiaManual,
-      puntos: transformTextToList(getTranslation("puntosCard3")),
-    },
-    {
-      titulo: getTranslation("tituloCard4"),
-      imgSrc: imagenOsteopatia,
-      puntos: transformTextToList(getTranslation("puntosCard3")),
-    },
-    // {
-    //   titulo: "Anáisis biomecánico de los jugadores",
-    //   imgSrc: imagenAnalisis,
-    //   puntos: [
-    //     " Evaluación funcional de la movilidad músculo esquelética del jugado",
-    //     " Sedeterminará el impacto que tiene el cuerpo del jugador sobre la estructura anatómica del caballo",
-    //   ],
-    // },
-  ];
+  // Suponiendo que translationsCards contiene los datos del Excel
+  const cartasData = Object.values(translationsCards).map((row) => ({
+    titulo: getTranslation("tituloCard1", row),
+    imgSrc: row[`imagenCard1${language.toUpperCase()}`], // Usar la URL de la imagen del archivo Excel
+    puntos: transformTextToList(getTranslation("puntosCard1", row)),
+  }));
 
   return (
     <div>
@@ -103,4 +90,4 @@ const CardServicios = () => {
   );
 };
 
-export default CardServicios;
+export default CardServiciosDinamicaEN;

@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import BannerServicios from "../components/BannerServicios";
 import { LanguageContextService } from "../context/LanguageContextService";
-import CardServicios from "../components/CardServicios";
 import NavReactES from "../components/common/NavReactES";
 import Footer from "../components/common/Footer";
+import CardServiciosDinamica from "../components/CardServiciosDinamica";
 
 const Servicios = () => {
   const handleContactClick = () => {
@@ -43,8 +43,11 @@ const Servicios = () => {
             {getTranslation("parrafo")}
           </h6>
         </article>
-        <article>
+        {/* <article>
           <CardServicios />
+        </article> */}
+        <article>
+          <CardServiciosDinamica />
         </article>
         <article className="container pb-4 text-center">
           <h6

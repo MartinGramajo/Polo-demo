@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Collapse from "react-bootstrap/Collapse";
 import axios from "axios";
@@ -41,7 +41,7 @@ function MiHistoriaFR() {
   const [open, setOpen] = useState(false);
 
   const handleHomeClick = () => {
-    window.location.href = "#/home-fr";
+    window.location.href = "#/home-en";
   };
   console.log("MiHistoria ~ translationsHistoria :", translationsHistoria);
 
