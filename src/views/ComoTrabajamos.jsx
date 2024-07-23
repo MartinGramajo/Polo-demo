@@ -3,9 +3,9 @@ import ImageTextComponent2 from "../components/ImageTextComponent2";
 import ImageTextMobileComponent2 from "../components/ImageTextMobileComponente2";
 import { LanguageContextComoTrabajamos } from "../context/LanguageContextComoTrabajamos";
 import { useContext } from "react";
-import CardComoTrabajamos from "../components/CardComoTrabajamos";
 import NavReactES from "../components/common/NavReactES";
 import Footer from "../components/common/Footer";
+import CardComoTrabajamosDinamico from "../components/CardComoTrabajamosDinamico";
 
 const ComoTrabajamos = () => {
   const handleContactClick = () => {
@@ -42,7 +42,8 @@ const ComoTrabajamos = () => {
 
         <div className="container animate__animated animate__fadeInUp py-4">
           <section className="row">
-            <CardComoTrabajamos />
+            {/* <CardComoTrabajamos /> */}
+            <CardComoTrabajamosDinamico />
           </section>
           <div className="container animate__animated animate__fadeInUp py-4">
             <blockquote className="blockquote text-center py-5-mobile">

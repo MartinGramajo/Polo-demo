@@ -1,43 +1,60 @@
-import React, { useContext } from "react";
-
+import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { LanguageContextComoTrabajamos } from "../context/LanguageContextComoTrabajamos";
+import axios from "axios";
+import Papa from "papaparse";
 
-const CardComoTrabajamos = () => {
-  const { language, translationsCards } = useContext(
-    LanguageContextComoTrabajamos
-  );
+const CardComoTrabajamosDinamico = () => {
+  const [language, setLanguage] = useState("es");
+  const [translationsCards, setTranslationsCards] = useState({});
 
-  const getTranslation = (key) => {
+  useEffect(() => {
+    const fetchTranslations = async () => {
+      try {
+        const response = await axios.get(
+          "https://docs.google.com/spreadsheets/d/e/2PACX-1vTHHKeStvm2T8Aau3gC2X81Cfc-frpHXxRGtwOAvK_5IyItt2P-X6apNR4LAomYszG-1X4Dnowk1LAg/pub?output=csv"
+        );
+        const parsedData = Papa.parse(response.data, { header: true }).data;
+        const translationsData = {};
+        parsedData.forEach((row) => {
+          translationsData[row.id] = row;
+        });
+        setTranslationsCards(translationsData);
+      } catch (error) {
+        console.error("Error fetching translations:", error);
+      }
+    };
+
+    fetchTranslations();
+  }, []);
+
+  const getTranslation = (key, row) => {
     const translationKey = `${key}${language.toUpperCase()}`;
-    const translation = translationsCards[1]
-      ? translationsCards[1][translationKey]
-      : "";
-
-    return translation;
+    return row ? row[translationKey] : "";
   };
 
   const transformTextToList = (text) => {
     return text.split(".").map((item) => item.trim());
   };
 
-  // Datos de las cartas con imágenes
-  const cartasData = [
-    {
-      titulo: getTranslation("tituloCard1"),
-      puntos: transformTextToList(getTranslation("puntosCard1")),
-    },
-    {
-      titulo: getTranslation("tituloCard2"),
-      puntos: transformTextToList(getTranslation("puntosCard2")),
-    },
-    {
-      titulo: getTranslation("tituloCard3"),
-      puntos: transformTextToList(getTranslation("puntosCard3")),
-    },
-  ];
+  // Generar datos de las cartas dinámicamente desde translationsCards
+  const cartasData = Object.values(translationsCards)
+    .map((row) => {
+      const cardData = [];
+      for (let i = 1; i <= 3; i++) {
+        const tituloKey = `tituloCard${i}`;
+        const puntosKey = `puntosCard${i}`;
+        if (row[tituloKey + language.toUpperCase()]) {
+          cardData.push({
+            titulo: getTranslation(tituloKey, row),
+            puntos: transformTextToList(getTranslation(puntosKey, row)),
+          });
+        }
+      }
+      return cardData;
+    })
+    .flat();
 
   return (
     <div>
@@ -79,4 +96,4 @@ const CardComoTrabajamos = () => {
   );
 };
 
-export default CardComoTrabajamos;
+export default CardComoTrabajamosDinamico;

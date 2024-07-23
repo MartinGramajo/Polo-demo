@@ -4,9 +4,9 @@ import axios from "axios";
 import Papa from "papaparse";
 import ImageTextComponent2FR from "../components/ImageTextComponent2FR";
 import ImageTextMobileComponent2FR from "../components/ImageTextMobileComponenteFR";
-import CardComoTrabajamosFR from "../components/CardComoTrabajamosFR";
 import NavReactFR from "../components/common/NavReactFR";
 import FooterFR from "../components/common/FooterFR";
+import CardComoTrabajamosDinamicoFR from "../components/CardComoTrabajamosDinamicoFR";
 
 const ComoTrabajamosFR = () => {
   const handleContactClick = () => {
@@ -64,7 +64,7 @@ const ComoTrabajamosFR = () => {
 
         <div className="container animate__animated animate__fadeInUp py-4">
           <section className="row">
-            <CardComoTrabajamosFR />
+            <CardComoTrabajamosDinamicoFR />
           </section>
           <div className="container animate__animated animate__fadeInUp py-4">
             <blockquote className="blockquote text-center py-5-mobile">

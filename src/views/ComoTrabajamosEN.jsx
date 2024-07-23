@@ -2,11 +2,11 @@ import "animate.css";
 import { useEffect, useState } from "react";
 import ImageTextComponent2EN from "../components/ImageTextComponent2EN";
 import ImageTextMobileComponent2EN from "../components/ImageTextMobileComponent2EN";
-import CardComoTrabajamosEN from "../components/CardComoTrabajamosEN";
 import axios from "axios";
 import Papa from "papaparse";
 import NavReactEN from "../components/common/NavReactEN";
 import FooterEN from "../components/common/FooterEN";
+import CardComoTrabajamosDinamicoEN from "../components/CardComoTrabajamosDinamicoEN";
 const ComoTrabajamosEN = () => {
   const handleContactClick = () => {
     window.location.href = "#/contact";
@@ -63,7 +63,7 @@ const ComoTrabajamosEN = () => {
 
         <div className="container animate__animated animate__fadeInUp py-4">
           <section className="row">
-            <CardComoTrabajamosEN />
+            <CardComoTrabajamosDinamicoEN />
           </section>
           <div className="container animate__animated animate__fadeInUp py-4">
             <blockquote className="blockquote text-center py-5-mobile">
