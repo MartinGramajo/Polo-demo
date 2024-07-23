@@ -48,10 +48,13 @@ const ServiciosFR = () => {
     <div className="d-flex flex-column min-vh-100 ">
       <NavReactFR />
       <BannerServicios />
-      <article className="py-4" style={{ textAlign: "start" }}>
+      <article
+        className="py-4 padding-lr-responsive"
+        style={{ textAlign: "start" }}
+      >
         <div className="pt-4 container">
           <h1
-            className="animate__animated animate__fadeInLeft montserrat-bold"
+            className="animate__animated animate__fadeInLeft montserrat-bold pb-4"
             style={{ fontSize: "24px", fontWeight: "bold" }}
           >
             {getTranslation("titulo")}

@@ -23,18 +23,15 @@ const ComoTrabajamos = () => {
   return (
     <section className="d-flex flex-column min-vh-100 ">
       <NavReactES />
-      <div className="container">
-        <div
-          className="d-none d-lg-block animate__animated   animate__fadeIn"
-          id="trabajamos"
-        >
+      <div className="container ">
+        <div className="d-none d-lg-block animate__animated   " id="trabajamos">
           <ImageTextComponent2 />
         </div>
 
         <div>
           <div
             id="trabajamos/mobile"
-            className="d-lg-none d-block  animate__animated  animate__fadeIn"
+            className="d-lg-none d-block  animate__animated  "
           >
             <ImageTextMobileComponent2 />
           </div>

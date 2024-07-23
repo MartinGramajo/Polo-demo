@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import backgroundImage from "../assets/img/mapaMundi.png";
+import backgroundImage from "../assets/img/slider10.png";
 import { LanguageContextComoTrabajamos } from "../context/LanguageContextComoTrabajamos";
 
 const ImageTextMobileComponent2 = () => {
@@ -23,7 +23,10 @@ const ImageTextMobileComponent2 = () => {
       </div>
 
       {/* Texto abajo */}
-      <div className="container" style={{ width: "100%" }}>
+      <div
+        className="container padding-lr-responsive"
+        style={{ width: "100%" }}
+      >
         <h3
           className="montserrat-bold  py-5-mobile"
           style={{ fontSize: "18px" }}

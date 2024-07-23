@@ -22,7 +22,7 @@ const BlogScreen = () => {
   return (
     <section className="d-flex flex-column min-vh-100 ">
       <NavReactES />
-      <div className="py-5">{renderBlog()}</div>
+      <div className="py-5 padding-lr-responsive">{renderBlog()}</div>
       <Footer />
     </section>
   );

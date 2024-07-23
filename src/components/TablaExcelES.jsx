@@ -43,19 +43,21 @@ const TablaExcelES = () => {
   };
 
   return (
-    <div className="blog-page container d-flex flex-wrap">
+    <div className="blog-page container">
       {loading ? (
-        <Spinner animation="border" role="status" className="mx-auto mt-5">
-          <span className="visually-hidden">Cargando...</span>
-        </Spinner>
+        <div className="d-flex justify-content-center">
+          <Spinner animation="border" role="status" className="mx-auto mt-5">
+            <span className="visually-hidden">Cargando...</span>
+          </Spinner>
+        </div>
       ) : blogEntries.length === 0 ? (
         <Alert variant="info" className="mx-auto mt-5">
           No hay notas cargadas aún.
         </Alert>
       ) : (
-        blogEntries.map((entry, index) => (
-          <Row key={index} className="mb-3">
-            <Col md={12}>
+        <Row>
+          {blogEntries.map((entry, index) => (
+            <Col key={index} md={6} xs={12} className="mb-3">
               <Card className="blog-card">
                 <Card.Img
                   variant="top"
@@ -74,63 +76,63 @@ const TablaExcelES = () => {
                   </Button>
                 </Card.Body>
               </Card>
-            </Col>
 
-            {/* Modal de detalles */}
-            <Modal
-              className="modal-xl"
-              show={index === selectedIndex}
-              onHide={handleCloseDetailModal}
-            >
-              <Modal.Header closeButton>
-                <Modal.Title>{entry.titulo1}</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <h6>{entry.descripcion1}</h6>
-                <div className="py-2">
-                  <h4>{entry.titulo2}</h4>
-                  <h6>{entry.descripcion2}</h6>
-                </div>
-                <div className="py-2">
-                  <h4>{entry.titulo4}</h4>
-                  <ul className="h6">{splitText(entry.descripcion4)}</ul>
-                </div>
-                <div className="py-2">
-                  <h4>{entry.titulolista2}</h4>
-                  <h6>{entry.titulolista2descripcion}</h6>
-                  <ol className="h6">{splitText(entry.descripcionlista2)}</ol>
-                </div>
-                <div className="py-2">
-                  <h4>{entry.titulolista3}</h4>
-                  <h6>{entry.titulolista3descripcion}</h6>
-                  <ul className="h6">{splitText(entry.descripcionlista3)}</ul>
-                </div>
-                <div className="py-2">
-                  <h4>{entry.titulo5}</h4>
-                  <h6>{entry.descripcion5}</h6>
-                </div>
-                <div className="py-2">
-                  <h4>{entry.titulolista4}</h4>
-                  <h6>{entry.titulolista4descripcion}</h6>
-                  <ul className="h6">{splitText(entry.descripcionlista4)}</ul>
-                </div>
-                <div className="py-2">
-                  <h4>{entry.titulo6}</h4>
-                  <h6>{entry.titulodescripcion6}</h6>
-                </div>
-                <div className="py-2">
-                  <h4>References</h4>
-                  <ul className="h6">{splitText(entry.referencias)}</ul>
-                </div>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button variant="secondary" onClick={handleCloseDetailModal}>
-                  Cerrar
-                </Button>
-              </Modal.Footer>
-            </Modal>
-          </Row>
-        ))
+              {/* Modal de detalles */}
+              <Modal
+                className="modal-xl"
+                show={index === selectedIndex}
+                onHide={handleCloseDetailModal}
+              >
+                <Modal.Header closeButton>
+                  <Modal.Title>{entry.titulo1}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <h6>{entry.descripcion1}</h6>
+                  <div className="py-2">
+                    <h4>{entry.titulo2}</h4>
+                    <h6>{entry.descripcion2}</h6>
+                  </div>
+                  <div className="py-2">
+                    <h4>{entry.titulo4}</h4>
+                    <ul className="h6">{splitText(entry.descripcion4)}</ul>
+                  </div>
+                  <div className="py-2">
+                    <h4>{entry.titulolista2}</h4>
+                    <h6>{entry.titulolista2descripcion}</h6>
+                    <ol className="h6">{splitText(entry.descripcionlista2)}</ol>
+                  </div>
+                  <div className="py-2">
+                    <h4>{entry.titulolista3}</h4>
+                    <h6>{entry.titulolista3descripcion}</h6>
+                    <ul className="h6">{splitText(entry.descripcionlista3)}</ul>
+                  </div>
+                  <div className="py-2">
+                    <h4>{entry.titulo5}</h4>
+                    <h6>{entry.descripcion5}</h6>
+                  </div>
+                  <div className="py-2">
+                    <h4>{entry.titulolista4}</h4>
+                    <h6>{entry.titulolista4descripcion}</h6>
+                    <ul className="h6">{splitText(entry.descripcionlista4)}</ul>
+                  </div>
+                  <div className="py-2">
+                    <h4>{entry.titulo6}</h4>
+                    <h6>{entry.titulodescripcion6}</h6>
+                  </div>
+                  <div className="py-2">
+                    <h4>References</h4>
+                    <ul className="h6">{splitText(entry.referencias)}</ul>
+                  </div>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleCloseDetailModal}>
+                    Cerrar
+                  </Button>
+                </Modal.Footer>
+              </Modal>
+            </Col>
+          ))}
+        </Row>
       )}
     </div>
   );
