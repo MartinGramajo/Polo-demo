@@ -49,17 +49,15 @@ const Home2 = () => {
   return (
     <div className="d-flex flex-column min-vh-100 ">
       <NavReactES />
-      <BannerHome2Texto />
+      <BannerHome2Texto translations={translations} language={language} />
       <article className="pt-4 container d-none d-lg-block py-5">
         <h6 className="montserrat-regular" style={{ fontSize: "20px" }}>
-          {getTranslation("titulo")}
-          <br />
           {getTranslation("parrafo1")}
           <br />
           {getTranslation("parrafo2")}
         </h6>
       </article>
-      <article className="py-2 container d-lg-none d-block py-5-mobile">
+      <article className="py-2 container d-lg-none d-block py-5-mobile padding-lr-responsive">
         <h6 className="montserrat-regular" style={{ fontSize: "16px" }}>
           {getTranslation("titulo")}
           <br />
@@ -71,7 +69,7 @@ const Home2 = () => {
 
       <CalendlyWidget />
       <article className="container pt-4">
-        <div className="pb-5 pt-2">
+        <div className="py-5 pt-2 padding-lr-responsive">
           <PregFrecuentes />
         </div>
       </article>

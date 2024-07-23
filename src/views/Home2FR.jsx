@@ -73,11 +73,9 @@ const Home2FR = () => {
   return (
     <div className="d-flex flex-column min-vh-100 ">
       <NavReactFR />
-      <BannerHome2Texto />
+      <BannerHome2Texto translations={translations} language={language} />
       <article className="pt-4 container d-none d-lg-block py-5">
         <h6 className="montserrat-regular" style={{ fontSize: "20px" }}>
-          {getTranslation("titulo")}
-          <br />
           {getTranslation("parrafo1")}
           <br />
           {getTranslation("parrafo2")}

@@ -2,7 +2,13 @@ import { Image } from "react-bootstrap";
 import bannerServicios from "../assets/img/slider2.png";
 import bannerServiciosCuadrado from "../assets/img/slider2.png";
 
-const BannerHome2Texto = () => {
+const BannerHome2Texto = ({ translations, language }) => {
+  const getTranslation = (key) => {
+    const translationKey = `${key}Home${language.toUpperCase()}`;
+    const translation = translations[1] ? translations[1][translationKey] : "";
+    return translation;
+  };
+
   return (
     <div>
       <div className="bannerContainer d-none d-md-block">
@@ -20,8 +26,8 @@ const BannerHome2Texto = () => {
         />
       </div>
       <div className="textOverlay">
-        <article className=" container margin-text-image banner-text">
-          <i>SERVING HEALTH TO POLO PONIES</i>
+        <article className=" banner-text text-white title">
+          <h1>{getTranslation("titulo")}</h1>
         </article>
       </div>
     </div>

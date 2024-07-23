@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import backgroundImage from "../assets/img/mapaMundi.png";
+import backgroundImage from "../assets/img/slider12.png";
 import axios from "axios";
 import Papa from "papaparse";
 

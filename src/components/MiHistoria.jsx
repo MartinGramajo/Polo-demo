@@ -37,7 +37,14 @@ function MiHistoria() {
           aria-controls="MiHistoria-collapse-text"
           aria-expanded={open}
         >
-          {getTranslation("botonTexto")}
+          {open ? (
+            <>
+              <img className="icono-back me-2" src={back} alt="back" />
+              HOME
+            </>
+          ) : (
+            getTranslation("botonTexto")
+          )}
         </Button>
       </div>
       <Collapse in={open}>
@@ -82,13 +89,25 @@ function MiHistoria() {
           </div>
           <section className="d-flex justify-content-center flex-wrap">
             <div className="text-center pb-4 mx-4">
-              <button
-                className="ver-mas-btn-sidebar text-white montserrat-regular"
-                onClick={handleHomeClick}
+              <Button
+                onClick={() => setOpen(!open)}
+                className={
+                  open
+                    ? ` ver-mas-btn-sidebar text-white montserrat-regular`
+                    : `ver-mas-btn-sidebar text-white montserrat-regular`
+                }
+                aria-controls="MiHistoria-collapse-text"
+                aria-expanded={open}
               >
-                <img className="icono-back me-2" src={back} alt="back" />
-                HOME
-              </button>
+                {open ? (
+                  <>
+                    <img className="icono-back me-2" src={back} alt="back" />
+                    HOME
+                  </>
+                ) : (
+                  getTranslation("botonTexto")
+                )}
+              </Button>
             </div>
           </section>
         </div>

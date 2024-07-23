@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import Counter from "./Counter";
-import bannerServiciosCuadrado from "../assets/img/slider12.png";
+
+import bannerServiciosCuadrado from "../assets/img/mapaMundi.png";
 import { Image } from "react-bootstrap";
 import MiHistoria from "./MiHistoria";
 import { LanguageContextBiografia } from "../context/LanguageContextBiografia";

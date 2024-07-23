@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import backgroundImage from "../assets/img/mapaMundi.png";
+import backgroundImage from "../assets/img/slider12.png";
+
 import { LanguageContextComoTrabajamos } from "../context/LanguageContextComoTrabajamos";
 
 const ImageTextComponent2 = () => {
