@@ -7,7 +7,7 @@ const BlogScreenFR = () => {
   return (
     <section className="d-flex flex-column min-vh-100 ">
       <NavReactFR />
-      <div className="py-5">
+      <div className="py-5 padding-lr-responsive">
         <TablaExcelFR />;
       </div>
       <FooterFR />

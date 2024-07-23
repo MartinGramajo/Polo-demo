@@ -9,7 +9,7 @@ const EmpresaFR = () => {
     <div>
       <NavReactFR />
       <BannerEmpresa />
-      <div className="py-4">
+      <div className="py-4 padding-lr-responsive">
         <BiografiaContenidoFR />
       </div>
       <FooterFR />

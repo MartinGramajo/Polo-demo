@@ -8,7 +8,7 @@ const Empresa = () => {
     <div>
       <NavReactES />
       <BannerEmpresa />
-      <div className="py-4">
+      <div className="py-4 padding-lr-responsive">
         <BiografiaContenido />
       </div>
       <Footer />

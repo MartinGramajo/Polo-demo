@@ -30,17 +30,17 @@ const ContactoContenido = () => {
       </div>
       <div className="d-flex justify-content-start py-4 d-lg-none d-block py-5-mobile">
         <h1
-          className="animate__animated  animate__fadeInLeft montserrat-bold"
+          className="animate__animated  animate__fadeInLeft montserrat-bold padding-lr-responsive"
           style={{ fontSize: "18px", fontWeight: "bold" }}
         >
           {getTranslation("tituloContacto")}
         </h1>
       </div>
-      <div className="d-flex justify-content-start">
+      <div className="d-flex justify-content-start padding-lr-responsive">
         <hr style={{ width: "200px", color: "#ff282d" }} />
       </div>
       <div className="row my-4 text-center">
-        <div className=" col-12 animate__animated  animate__fadeInUp">
+        <div className=" col-12 animate__animated  animate__fadeInUp padding-lr-responsive">
           <ContactoForm />
         </div>
       </div>
