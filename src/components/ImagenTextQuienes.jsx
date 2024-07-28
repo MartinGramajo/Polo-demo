@@ -23,7 +23,6 @@ const ImagenTextQuienes = () => {
   };
 
   const imagen = getTranslation("imagen");
-  console.log("ImagenTextQuienes ~  imagen :", imagen);
 
   return (
     <div className="container">

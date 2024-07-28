@@ -867,3 +867,8 @@ body {
     padding-right: 2rem !important;
   }
 }
+
+.imagen-bio {
+  width: 500px !important;
+  height: 500px !important;
+}

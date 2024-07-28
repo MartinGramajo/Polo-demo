@@ -43,7 +43,6 @@ function MiHistoriaEN() {
   const handleHomeClick = () => {
     window.location.href = "#/home-en";
   };
-  console.log("MiHistoria ~ translationsHistoria :", translationsHistoria);
 
   return (
     <>

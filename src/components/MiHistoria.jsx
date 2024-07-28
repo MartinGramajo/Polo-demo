@@ -22,7 +22,6 @@ function MiHistoria() {
   const handleHomeClick = () => {
     window.location.href = "/";
   };
-  console.log("MiHistoria ~ translationsHistoria :", translationsHistoria);
 
   return (
     <>
